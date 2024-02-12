@@ -3,7 +3,8 @@ import { info } from '../Data/demo'
 
 export default function Info() {
   return (
-    <section className='flex flex-row justify-center items-center space-x-10 mt-12'>
+    <section className='grid gap-10 grid-cols-1 md:grid-cols-2 lg:flex lg:flex-row 
+    justify-center items-center lg:space-x-10 mt-12'>
         {info.map((info) => <div key={info.title} className='flex flex-col space-y-8 
         items-center'>
             <div className='bg-[#212121] rounded-full w-[62px] h-[62px] flex 

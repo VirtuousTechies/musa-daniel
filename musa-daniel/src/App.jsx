@@ -8,8 +8,6 @@ import './App.css'
 import { AboutPage, ContactPage, HomePage, ProjectDetailPage, WorkPage } from './Pages';
 
 export default function App() {
-  const [count, setCount] = useState(0)
-
   return (
   <>
     <Router>

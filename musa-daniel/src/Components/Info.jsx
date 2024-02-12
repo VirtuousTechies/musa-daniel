@@ -3,7 +3,7 @@ import { info } from '../Data/demo'
 
 export default function Info() {
   return (
-    <section className='grid gap-10 grid-cols-1 md:grid-cols-2 lg:flex lg:flex-row 
+    <section className='grid gap-10 grid-cols-1 lg:grid-cols-2 xl:flex xl:flex-row 
     justify-center items-center lg:space-x-10 mt-12'>
         {info.map((info) => <div key={info.title} className='flex flex-col space-y-8 
         items-center'>

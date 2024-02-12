@@ -1,0 +1,1 @@
+export {default as daniel} from './images/main/daniel.png'

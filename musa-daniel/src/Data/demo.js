@@ -37,3 +37,21 @@ export const whatIDo = [
         img: ut       
     },
 ]
+export const skills = [
+    {
+        title:'VISUAL DESIGN',
+        percent: '90%'        
+    },
+    {
+        title:'USER RESEARCH',
+        percent: '80%'        
+    },
+    {
+        title:'PROTOTYPING & WIREFRAMING',
+        percent: '90%'        
+    },
+    {
+        title:'INTERACTION DESIGN',
+        percent: '85%'        
+    },
+]

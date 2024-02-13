@@ -1,9 +1,11 @@
 import React from 'react'
 import { navItems } from '../Data/demo'
 import { close, open } from '../Data'
+import { useNavigate } from 'react-router-dom';
 
 export default function NavBar() {
   const [active, setActive] = React.useState(false);
+  const navigate = useNavigate()
 
   return (
     <nav className='relative flex flex-row items-center justify-between px-8 py-5 
@@ -17,7 +19,9 @@ export default function NavBar() {
         ${active ? 'flex' : 'hidden'}
         `}>
             {navItems.map((items) => <li className='font-normal text-sm text-center md:text-start
-            hover:text-[#27AE60]' key={items}>{items}</li>)}
+            hover:text-[#27AE60]' key={items} onClick={() => items == 'About me' ? navigate('/about')
+            : items == 'Works' ? navigate('/works')
+            :navigate('/contact')}>{items}</li>)}
         </ul>
     </nav>
   )

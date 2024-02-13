@@ -3,9 +3,11 @@ import { info } from '../Data/demo'
 
 export default function Info() {
   return (
-    <section className='grid gap-10 grid-cols-1 lg:grid-cols-2 xl:flex xl:flex-row 
-    justify-center items-center lg:space-x-10 mt-12'>
-        {info.map((info) => <div key={info.title} className='flex flex-col space-y-8 
+    <section className='grid gap-10 grid-cols-1 md:grid-cols-2 xl:flex xl:flex-row 
+    justify-center items-center lg:space-x-10 mt-12 cursor-pointer'>
+        {info.map((info) => <a href={info.title == 'Email Address' ? 'https://Musaehrunmusele@gmail.com'
+        :info.title == 'Linkedln' ? 'https://www.linkedin.com/in/ehrunmusele'
+        : null } key={info.title} className='flex flex-col space-y-8 
         items-center'>
             <div className='bg-[#212121] rounded-full w-[62px] h-[62px] flex 
             items-center justify-center'>
@@ -15,7 +17,7 @@ export default function Info() {
                 <p className='font-bold'>{info.title}</p>
                 <p>{info.answer}</p>
             </div>
-        </div>)}
+        </a>)}
     </section>
   )
 }

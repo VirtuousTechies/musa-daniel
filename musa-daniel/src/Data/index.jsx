@@ -7,3 +7,8 @@ export {default as pi} from './images/main/pi-icon.png'
 export {default as ut} from './images/main/ut-icon.png'
 
 export {default as featuredWorks} from './images/main/featured-works.png'
+
+export {default as rideEaseCover} from './images/main/ride-ease-cover.png'
+export {default as airMaxCover} from './images/main/air-max-cover.png'
+export {default as adBlockerCover} from './images/ad-blocker/ad-blocker-cover.png'
+export {default as foodAppCover} from './images/main/food-app-cover.png'

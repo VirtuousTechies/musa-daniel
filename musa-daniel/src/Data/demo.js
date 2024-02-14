@@ -70,7 +70,7 @@ export const getInTouchInput = [
         placeHolder: 'Email'
     },
     {
-        type: 'number',
+        type: 'text',
         placeHolder: 'Phone number'
     },
 ]

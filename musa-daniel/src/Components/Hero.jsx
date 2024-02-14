@@ -1,7 +1,10 @@
 import React from 'react'
 import { daniel } from '../Data'
+import { useNavigate } from 'react-router-dom'
 
 export default function Hero() {
+  const navigate = useNavigate()
+
   return (
     <section className='flex flex-col-reverse space-y-reverse space-y-8 
     md:space-y-0 md:flex-row md:space-x-8 
@@ -15,7 +18,8 @@ export default function Hero() {
             justify-center md:justify-start items-center md:items-start'>
                 <button className='bg-[#27AE60] py-2 px-3'>Download CV</button>
                 <button className='border-[1px] border-solid 
-                border-[#F2F2F2] py-2 px-3'>Contact me</button>
+                border-[#F2F2F2] py-2 px-3' onClick={() => navigate('/contact')}>
+                Contact me</button>
             </div>
         </div>
         <img src={daniel} alt="Musa Daniel" className='w-[250px] md:w-[350px] lg:w-[450px]'/>

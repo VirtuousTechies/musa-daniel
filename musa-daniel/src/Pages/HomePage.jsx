@@ -1,5 +1,6 @@
 import React from 'react'
 import { About, FeaturedWork, GetInTouch, Hero, Info, MySkills, NavBar, WhatIDo } from '../Components'
+import Footer from '../Components/Footer'
 
 export default function HomePage() {
   return (
@@ -12,6 +13,7 @@ export default function HomePage() {
       <FeaturedWork />
       <MySkills />
       <GetInTouch />
+      <Footer />
     </section>
   )
 }

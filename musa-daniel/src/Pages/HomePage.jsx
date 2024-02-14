@@ -1,5 +1,5 @@
 import React from 'react'
-import { About, FeaturedWork, Hero, Info, MySkills, NavBar, WhatIDo } from '../Components'
+import { About, FeaturedWork, GetInTouch, Hero, Info, MySkills, NavBar, WhatIDo } from '../Components'
 
 export default function HomePage() {
   return (
@@ -11,6 +11,7 @@ export default function HomePage() {
       <WhatIDo />
       <FeaturedWork />
       <MySkills />
+      <GetInTouch />
     </section>
   )
 }

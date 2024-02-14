@@ -55,3 +55,22 @@ export const skills = [
         percent: '85%'        
     },
 ]
+
+export const getInTouchInput = [
+    {
+        type: 'text',
+        placeHolder: 'Name'
+    },
+    {
+        type: 'text',
+        placeHolder: 'Last name'
+    },
+    {
+        type: 'email',
+        placeHolder: 'Email'
+    },
+    {
+        type: 'number',
+        placeHolder: 'Phone number'
+    },
+]

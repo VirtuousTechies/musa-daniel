@@ -10,5 +10,6 @@ export {default as featuredWorks} from './images/main/featured-works.png'
 
 export {default as rideEaseCover} from './images/main/ride-ease-cover.png'
 export {default as airMaxCover} from './images/main/air-max-cover.png'
-export {default as adBlockerCover} from './images/ad-blocker/ad-blocker-cover.png'
+export {default as adBlockerCover} from './images/main/ad-blocker-cover.png'
 export {default as foodAppCover} from './images/main/food-app-cover.png'
+export {default as right} from './images/main/right-icon.png'

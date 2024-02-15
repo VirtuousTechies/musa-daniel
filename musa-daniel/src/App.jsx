@@ -5,7 +5,7 @@ import {
   Route
 } from "react-router-dom";
 import './App.css'
-import { AboutPage, ContactPage, HomePage, ProjectDetailPage, WorkPage } from './Pages';
+import { AboutPage, AdBlockerPage, ContactPage, FoodAppPage, HomePage, RideEasePage, WorkPage } from './Pages';
 
 export default function App() {
   return (
@@ -16,7 +16,9 @@ export default function App() {
         <Route exact path='/about' element={ <AboutPage /> }></Route>
         <Route exact path='/works' element={ <WorkPage /> }></Route>
         <Route exact path='/contact' element={ <ContactPage /> }></Route>
-        <Route exact path='/:id' element={ <ProjectDetailPage /> }></Route>
+        <Route exact path='/works/rideEase' element={ <RideEasePage /> }></Route>
+        <Route exact path='/works/adBlocker' element={ <AdBlockerPage /> }></Route>
+        <Route exact path='/works/foodApp' element={ <FoodAppPage /> }></Route>
       </Routes>
     </Router>
   </>

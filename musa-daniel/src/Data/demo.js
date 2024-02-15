@@ -80,10 +80,11 @@ export const works = [
         name: 'RIDE SHARING APP',
         img: rideEaseCover,
         description: 'RideEase is a mobile application that connects passengers with nearby drivers to provide quick and convenient transportation services. The app is designed to provide a seamless user experience for both drivers and passengers, with features that prioritize safety, reliability, and affordability.',
-        type: 'App Design'
+        type: 'App Design',
+        link: 'rideEase'
     },
     {
-        name: 'NIKE SHOE PROUCT SCREEN',
+        name: 'NIKE SHOE PRODUCT SCREEN',
         img: airMaxCover,
         description: 'RideEase is a mobile application that connects passengers with nearby drivers to provide quick and convenient transportation services. The app is designed to provide a seamless user experience for both drivers and passengers, with features that prioritize safety, reliability, and affordability.',
         type: 'Website Design'
@@ -92,12 +93,14 @@ export const works = [
         name: 'AD BLOCKER APP',
         img: adBlockerCover,
         description: 'This design case study showcases the successful creation of an Ad Blocker/VPN app that prioritizes user experience, privacy, and security. The integrated solution addresses user pain points and provides a valuable tool for those seeking a seamless and secure online browsing experience.',
-        type: 'App Design'
+        type: 'App Design',
+        link: 'adBlocker'
     },
     {
         name: 'FOOD APP',
         img: foodAppCover,
         description: 'ChowXpress is an food ordering app for food lovers with a wide variety of catalogue offerings with an especial service of African cuisines, it gives users the option to place special orders to a suite of vendors and vendors who take the orders users place, and interact with each other in real time.',
-        type: 'App Design'
+        type: 'App Design',
+        link: 'foodApp'
     },
 ]

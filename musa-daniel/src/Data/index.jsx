@@ -24,5 +24,10 @@ export {default as dotDesign} from './images/main/dot-design.png'
 
 export {default as adBlockerMainOne} from './images/ad-blocker/ad-blocker-main-one.png'
 export {default as adBlockerMainTwo} from './images/ad-blocker/ad-blocker-main-two.png'
-
 export {default as figma} from './images/food-app/figma.png'
+
+export {default as foodMainOne} from './images/food-app/food-main-one.png'
+export {default as foodMainTwo} from './images/food-app/food-main-two.png'
+export {default as foodMainThree} from './images/food-app/food-main-three.png'
+export {default as foodMainFour} from './images/food-app/food-main-four.png'
+export {default as foodMainFive} from './images/food-app/food-main-five.png'

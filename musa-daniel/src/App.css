@@ -19,3 +19,7 @@ body {
   background-color: #171717;
   color: white;
 }
+
+.remove>img {
+  max-width: none;
+}

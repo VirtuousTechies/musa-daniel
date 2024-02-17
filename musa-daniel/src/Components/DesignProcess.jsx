@@ -3,7 +3,7 @@ import { designProcess } from '../Data/demo'
 
 export default function DesignProcess() {
   return (
-    <section className='flex flex-col space-y-10'>
+    <section className='flex flex-col space-y-20'>
         <div className='flex flex-col space-y-1'>
             <h2 className='font-three font-bold text-3xl'>Design Process</h2>
             <div className='bg-[#3676E0] w-[85px] h-[3px]'></div>

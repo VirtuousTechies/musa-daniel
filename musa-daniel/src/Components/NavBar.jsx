@@ -10,7 +10,7 @@ export default function NavBar() {
   return (
     <nav className='relative flex flex-row items-center justify-between px-8 py-5 
     w-full cursor-pointer'>
-        <h1 className='font-bold text-2xl'>Ehrunmusele</h1>
+        <h1 className='font-bold text-2xl' onClick={() => navigate('/')}>Ehrunmusele</h1>
         <img src={active ? close : open } onClick={() => setActive(prev => !prev)} 
         className={`${active ? 'w-[25px]' : 'w-[35px]'} md:hidden`} />
         <ul className={`self-end absolute top-20 left-0 flex-col space-y-10 

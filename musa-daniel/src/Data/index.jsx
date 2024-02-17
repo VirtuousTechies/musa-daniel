@@ -19,3 +19,5 @@ export {default as define} from './images/main/define.png'
 export {default as ideate} from './images/main/ideate.png'
 export {default as design} from './images/main/design.png'
 export {default as test} from './images/main/test.png'
+
+export {default as dotDesign} from './images/main/dot-design.png'

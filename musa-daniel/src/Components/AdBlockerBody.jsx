@@ -1,6 +1,6 @@
 import React from 'react'
 import DesignProcess from './DesignProcess'
-import { adBlockerGoals, adBlockerMainOne, adBlockerMainTwo, adBlockerOverview, dotDesign, figma } from '../Data'
+import { adBlockerGoals, adBlockerMainOne, adBlockerMainTwo, adBlockerOverview, adBlockerScreens, dotDesign, figma } from '../Data'
 import Heading from './Heading'
 import { adBlockerData } from '../Data/demo'
 
@@ -78,7 +78,10 @@ export default function AdBlockerBody() {
       <DesignProcess />
       <section></section>
       <section></section>
-      <section></section>
+      <section className='mt-20 flex flex-col space-y-10 mx-5 md:mx-0 md:w-[90%] xl:w-[80%]'>
+        <Heading text={'Other Screens'} />
+        <img src={adBlockerScreens} alt="screens" />
+      </section>
     </section>
   )
 }

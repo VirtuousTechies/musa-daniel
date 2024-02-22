@@ -32,6 +32,7 @@ export {default as adBlockerMainTwo} from './images/ad-blocker/ad-blocker-main-t
 export {default as figma} from './images/food-app/figma.png'
 export {default as adBlockerOverview} from './images/ad-blocker/ad-blocker-overview.png'
 export {default as adBlockerGoals} from './images/ad-blocker/ad-blocker-goals.png'
+export {default as adBlockerScreens} from './images/ad-blocker/ad-blocker-screens.png'
 
 export {default as foodMainOne} from './images/food-app/food-main-one.png'
 export {default as foodMainTwo} from './images/food-app/food-main-two.png'

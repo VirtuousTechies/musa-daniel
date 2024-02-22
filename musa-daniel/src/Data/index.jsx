@@ -22,6 +22,11 @@ export {default as test} from './images/main/test.png'
 
 export {default as dotDesign} from './images/main/dot-design.png'
 
+export {default as rideMainOne} from './images/ride-ease/ride-ease-main-one.png'
+export {default as rideMainTwo} from './images/ride-ease/ride-ease-main-two.png'
+export {default as underline} from './images/ride-ease/underline.png'
+export {default as rideCursor} from './images/ride-ease/ride-ease-cursor.png'
+
 export {default as adBlockerMainOne} from './images/ad-blocker/ad-blocker-main-one.png'
 export {default as adBlockerMainTwo} from './images/ad-blocker/ad-blocker-main-two.png'
 export {default as figma} from './images/food-app/figma.png'

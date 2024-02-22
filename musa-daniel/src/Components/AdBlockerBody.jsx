@@ -43,18 +43,24 @@ export default function AdBlockerBody() {
         <img src={dotDesign} alt="dot-design" className='self-end md:self-start w-[60px] 
         md:w-auto' />
       </section>
-      <section className='flex flex-row justify-between mt-52 w-[80%]'>
+      <section className='flex flex-col-reverse space-y-reverse space-y-10 md:space-y-0 
+      md:flex-row md:justify-between mx-5 md:mx-0 mt-28 lg:mt-52 md:w-[90%] xl:w-[80%]'>
         <div className='flex flex-col space-y-5'>
           <div className='flex flex-col space-y-2'>
             <Heading text={'Product Overview'}/>
-            <p className='font-three font-normal tracking-tight leading-6 text-lg w-[90%]'>{adBlockerData.productOverview}</p>
+            <p className='text-center md:text-start font-three font-normal tracking-tight 
+            leading-6 text-base md:text-lg md:w-[90%]'>
+            {adBlockerData.productOverview}</p>
           </div>
           <div className='flex flex-col space-y-2'>
             <Heading text={'Product Statement'}/>
-            <p className='font-three font-normal tracking-tight leading-6 text-lg w-[90%]'>{adBlockerData.productStatement}</p>
+            <p className='text-center md:text-start font-three font-normal tracking-tight 
+            leading-6 text-base md:text-lg md:w-[90%]'>
+            {adBlockerData.productStatement}</p>
           </div>
         </div>
-        <img src={adBlockerOverview} alt="phone-image" />
+        <img src={adBlockerOverview} alt="phone-image" className='self-center w-[60%] 
+        md:w-[12rem] lg:w-full' />
       </section>
       <section></section>
       <DesignProcess />

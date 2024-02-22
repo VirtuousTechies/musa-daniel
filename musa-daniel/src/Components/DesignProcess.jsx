@@ -4,7 +4,7 @@ import Heading from './Heading'
 
 export default function DesignProcess() {
   return (
-    <section className='flex flex-col space-y-20'>
+    <section className='flex flex-col space-y-20 mt-20'>
         <Heading text={'Design Process'}/>
         <section className='grid gap-10 grid-cols-2 md:grid-cols-4 lg:flex lg:flex-row lg:space-x-12 xl:space-x-20'>
             {designProcess.map((list) => <div key={list.title} className='flex flex-col 

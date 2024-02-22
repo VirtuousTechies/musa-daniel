@@ -30,6 +30,7 @@ export {default as rideCursor} from './images/ride-ease/ride-ease-cursor.png'
 export {default as adBlockerMainOne} from './images/ad-blocker/ad-blocker-main-one.png'
 export {default as adBlockerMainTwo} from './images/ad-blocker/ad-blocker-main-two.png'
 export {default as figma} from './images/food-app/figma.png'
+export {default as adBlockerOverview} from './images/ad-blocker/ad-blocker-overview.png'
 
 export {default as foodMainOne} from './images/food-app/food-main-one.png'
 export {default as foodMainTwo} from './images/food-app/food-main-two.png'

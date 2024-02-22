@@ -1,6 +1,6 @@
 import React from 'react'
 import DesignProcess from './DesignProcess'
-import { adBlockerMainOne, adBlockerMainTwo, dotDesign, figma } from '../Data'
+import { adBlockerMainOne, adBlockerMainTwo, adBlockerOverview, dotDesign, figma } from '../Data'
 
 export default function AdBlockerBody() {
   return (
@@ -41,7 +41,13 @@ export default function AdBlockerBody() {
         <img src={dotDesign} alt="dot-design" className='self-end md:self-start w-[60px] 
         md:w-auto' />
       </section>
-      <section></section>
+      <section>
+        <section>
+
+        </section>
+        <section></section>
+        <img src={adBlockerOverview} alt="phone-image" />
+      </section>
       <section></section>
       <DesignProcess />
       <section></section>

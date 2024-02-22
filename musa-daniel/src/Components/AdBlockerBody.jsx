@@ -1,10 +1,12 @@
 import React from 'react'
 import DesignProcess from './DesignProcess'
 import { adBlockerMainOne, adBlockerMainTwo, adBlockerOverview, dotDesign, figma } from '../Data'
+import Heading from './Heading'
+import { adBlockerData } from '../Data/demo'
 
 export default function AdBlockerBody() {
   return (
-    <section className='flex flex-col space-y-10 justify-center items-center w-full'>
+    <section className='flex flex-col justify-center items-center w-full'>
       <section className='flex flex-col-reverse space-y-reverse space-y-10 md:space-y-0
        md:flex-row md:justify-between w-full px-5'>
         <div className='flex flex-col space-y-10 justify-center items-center md:items-start 
@@ -41,11 +43,17 @@ export default function AdBlockerBody() {
         <img src={dotDesign} alt="dot-design" className='self-end md:self-start w-[60px] 
         md:w-auto' />
       </section>
-      <section>
-        <section>
-
-        </section>
-        <section></section>
+      <section className='flex flex-row justify-between mt-52 w-[80%]'>
+        <div className='flex flex-col space-y-5'>
+          <div className='flex flex-col space-y-2'>
+            <Heading text={'Product Overview'}/>
+            <p className='font-three font-normal tracking-tight leading-6 text-lg w-[90%]'>{adBlockerData.productOverview}</p>
+          </div>
+          <div className='flex flex-col space-y-2'>
+            <Heading text={'Product Statement'}/>
+            <p className='font-three font-normal tracking-tight leading-6 text-lg w-[90%]'>{adBlockerData.productStatement}</p>
+          </div>
+        </div>
         <img src={adBlockerOverview} alt="phone-image" />
       </section>
       <section></section>

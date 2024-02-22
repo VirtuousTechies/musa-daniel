@@ -44,7 +44,7 @@ export default function AdBlockerBody() {
         md:w-auto' />
       </section>
       <section className='flex flex-col-reverse space-y-reverse space-y-10 md:space-y-0 
-      md:flex-row md:justify-between mx-5 md:mx-0 mt-28 lg:mt-52 md:w-[90%] xl:w-[80%]'>
+      md:flex-row md:justify-between mx-5 md:mx-0 mt-28 lg:mt-52 xl:mt-60 md:w-[90%] xl:w-[80%]'>
         <div className='flex flex-col space-y-5'>
           <div className='flex flex-col space-y-2'>
             <Heading text={'Product Overview'}/>
@@ -62,14 +62,15 @@ export default function AdBlockerBody() {
         <img src={adBlockerOverview} alt="phone-image" className='self-center w-[60%] 
         md:w-[12rem] lg:w-full' />
       </section>
-      <section className='flex flex-col-reverse space-y-reverse space-y-10 md:space-y-0 
-      md:flex-row md:space-x-20 mx-5 md:mx-0 mt-28 md:w-[90%] xl:w-[80%]'>
-        <img src={adBlockerGoals} alt="phone-image" className='self-center mx-10' />
+      <section className='flex flex-col space-y-10 md:space-y-0 
+      md:flex-row md:space-x-5 lg:space-x-20 mx-5 md:mx-0 mt-28 md:w-[90%] xl:w-[80%]'>
+        <img src={adBlockerGoals} alt="phone-image" className='self-center w-auto md:w-[15rem] 
+        lg:w-auto mx-10' />
        <div className='self-end flex flex-col space-y-2'>
         <Heading text={'Goals'} width={true}/>
-        <ol className='list-disc'>
-          {adBlockerData.goals.map((item => <li key={item} className='text-center md:text-start 
-          font-three font-normal tracking-tight leading-6 text-base md:text-lg md:w-[90%]'>
+        <ol className='list-disc mx-5 md:mx-0'>
+          {adBlockerData.goals.map((item => <li key={item} className='font-three font-normal 
+          tracking-tight leading-6 text-base md:text-lg lg:w-[90%]'>
           {item}</li>))}
         </ol>
        </div>

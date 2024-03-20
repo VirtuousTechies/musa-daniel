@@ -1,7 +1,6 @@
 import React from 'react'
-import { figma, foodMainFive, foodMainFour, foodMainOne, foodMainThree, foodMainTwo, foodTarget } from '../Data'
-import { targetAudience } from '../Data/demo'
-import { DesignProcess, TargetAudience } from '.'
+import { figma, foodMainFive, foodMainFour, foodMainOne, foodMainThree, foodMainTwo} from '../Data'
+import { DesignProcess } from '.'
 
 export default function FoodAppBody() {
   return (
@@ -59,7 +58,6 @@ export default function FoodAppBody() {
         <section></section>
         <section></section>
         <DesignProcess />
-        <TargetAudience ride={false} img={foodTarget} data={targetAudience.foodApp} />
         <section></section>
         <section></section>
     </section>

@@ -78,7 +78,14 @@ export default function AdBlockerBody() {
       </section>
       <DesignProcess />
       <TargetAudience ride={false} img={adTarget} data={targetAudience.adBlocker} />
-      <section></section>
+      <section className='mt-20 flex flex-col space-y-10 mx-5 md:mx-0 md:w-[90%] xl:w-[80%]'>
+        <Heading text={'User Research'} />
+        <ol className='list-disc mx-5 md:mx-0 md:ml-5'>
+          {adBlockerData.userResearch.map((item => <li key={item} className='font-three 
+          font-normal tracking-tight leading-6 text-base md:text-lg lg:w-[90%]'>
+          {item}</li>))}
+        </ol>
+      </section>
       <section className='mt-20 flex flex-col space-y-10 mx-5 md:mx-0 md:w-[90%] xl:w-[80%]'>
         <Heading text={'Other Screens'} />
         <img src={adBlockerScreens} alt="screens" />

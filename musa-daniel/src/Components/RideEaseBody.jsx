@@ -1,6 +1,8 @@
 import React from 'react'
-import { dotDesign, rideCursor, rideMainOne, rideMainTwo, underline } from '../Data'
+import { dotDesign, rideCursor, rideMainOne, rideMainTwo, rideTarget, underline } from '../Data'
 import DesignProcess from './DesignProcess'
+import { TargetAudience } from '.'
+import { targetAudience } from '../Data/demo'
 
 export default function RideEaseBody() {
   return (
@@ -36,7 +38,7 @@ export default function RideEaseBody() {
     <section></section>
     <section></section>
     <DesignProcess />
-    <section></section>
+    <TargetAudience ride={true} img={rideTarget} data={targetAudience.rideEase} />
     <section></section>
     <section></section>
   </section>

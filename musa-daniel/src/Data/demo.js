@@ -157,3 +157,8 @@ export const adBlockerData = {
     ],
     userResearch: ['Conducted user interviews and surveys to understand user pain points related to online ads and privacy concerns.', 'Analyzed competitor apps to identify strengths, weaknesses, and opportunities for differentiation.', 'Researched the latest trends in ad-blocking technology and VPN services.']
 }
+
+export const targetAudience = {
+    rideEase: ['Urban Dwellers: People living in densely populated areas where parking can be difficult to find and owning a car can be expensive.', 'Commuters: People who need to travel to and from work or school and want an alternative to public transportation.', 'Young Adults: People who may not have a car or who prefer not to own a car and are looking for an affordable transportation option.', 'Travelers: People who are visiting a new city and need a reliable transportation option to get around.'],
+    foodApp: [ ['Privacy-Conscious Users:', 'Individuals who prioritize their online privacy and seek tools to protect personal information from trackers and data collection.'], ['Tech-Savvy Professionals:', 'Professionals who use the internet for work and value a secure and uninterrupted browsing experience. They may be concerned about corporate espionage, data leaks, or unauthorized access to sensitive information.'], ['Frequent Travelers:', 'People who frequently travel and use public Wi-Fi networks, recognizing the need for a VPN to secure their internet connection and protect against potential threats.'], ['Digital Nomads:', 'Individuals who work remotely and rely heavily on the internet for their livelihood. They may prioritize both ad-blocking and VPN features for an efficient and secure online work environment.'] ]
+}

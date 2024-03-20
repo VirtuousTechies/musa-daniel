@@ -15,7 +15,7 @@ export default function NavBar() {
         className={`${active ? 'w-[25px]' : 'w-[35px]'} md:hidden`} />
         <ul className={`self-end absolute top-20 left-0 flex-col space-y-10 
         bg-[#212121] w-full py-10 md:py-0 bg-opacity-90 md:bg-transparent 
-        md:w-max md:space-y-0 md:static md:flex md:flex-row md:space-x-10
+        md:w-max md:space-y-0 md:static md:flex md:flex-row md:space-x-10 z-10 md:z-auto
         ${active ? 'flex' : 'hidden'}
         `}>
             {navItems.map((items) => <li className='font-normal text-sm text-center md:text-start

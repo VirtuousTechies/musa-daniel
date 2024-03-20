@@ -1,9 +1,11 @@
 import React from 'react'
-import { figma, foodMainFive, foodMainFour, foodMainOne, foodMainThree, foodMainTwo } from '../Data'
+import { figma, foodMainFive, foodMainFour, foodMainOne, foodMainThree, foodMainTwo, foodTarget } from '../Data'
+import { targetAudience } from '../Data/demo'
+import { DesignProcess, TargetAudience } from '.'
 
 export default function FoodAppBody() {
   return (
-    <section className='flex flex-col space-y-10 md:justify-center md:items-center w-full 
+    <section className='flex flex-col space-y-20 md:justify-center md:items-center w-full 
     bg-[#121212]'>
         <div className='flex pl-5 items-center md:self-end bg-gradient-to-l to-[#F9881F]
          from-[#ED474A] md:w-[400px] lg:w-[685px] h-[60px]'>
@@ -54,6 +56,12 @@ export default function FoodAppBody() {
             lg:w-[250px] xl:w-[300px] m-0'/>
         </figure>
         </section>
+        <section></section>
+        <section></section>
+        <DesignProcess />
+        <TargetAudience ride={false} img={foodTarget} data={targetAudience.foodApp} />
+        <section></section>
+        <section></section>
     </section>
   )
 }

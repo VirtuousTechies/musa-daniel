@@ -6,7 +6,7 @@ import { targetAudience } from '../Data/demo'
 
 export default function RideEaseBody() {
   return (
-    <section className='flex flex-col space-y-10 justify-center items-center w-full'>
+    <section className='flex flex-col space-y-20 justify-center items-center w-full'>
         <section className='flex flex-col-reverse space-y-reverse space-y-10 md:space-y-0
         md:flex-row md:justify-between w-full px-5'>
             <div className='relative flex flex-col space-y-8 mx-auto md:mx-0 pt-20 lg:pt-44 

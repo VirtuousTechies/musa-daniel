@@ -35,6 +35,7 @@ export {default as adBlockerOverview} from './images/ad-blocker/ad-blocker-overv
 export {default as adBlockerGoals} from './images/ad-blocker/ad-blocker-goals.png'
 export {default as adBlockerScreens} from './images/ad-blocker/ad-blocker-screens.png'
 export {default as adTarget} from './images/ad-blocker/target-audience.png'
+export {default as adHf} from './images/ad-blocker/ad-hf.png'
 
 export {default as foodMainOne} from './images/food-app/food-main-one.png'
 export {default as foodMainTwo} from './images/food-app/food-main-two.png'

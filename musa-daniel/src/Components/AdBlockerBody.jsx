@@ -1,6 +1,6 @@
 import React from 'react'
 import DesignProcess from './DesignProcess'
-import { adBlockerGoals, adBlockerMainOne, adBlockerMainTwo, adBlockerOverview, adBlockerScreens, adTarget, dotDesign, figma } from '../Data'
+import { adBlockerGoals, adBlockerMainOne, adBlockerMainTwo, adBlockerOverview, adBlockerScreens, adHf, adTarget, dotDesign, figma } from '../Data'
 import Heading from './Heading'
 import { adBlockerData, targetAudience } from '../Data/demo'
 import { TargetAudience } from '.'
@@ -85,6 +85,10 @@ export default function AdBlockerBody() {
           font-normal tracking-tight leading-6 text-base md:text-lg lg:w-[90%]'>
           {item}</li>))}
         </ol>
+      </section>
+      <section className='mt-20 flex flex-col space-y-10 mx-5 md:mx-0 md:w-[90%] xl:w-[80%]'>
+        <Heading text={'High Fidelity Screen'} />
+        <img src={adHf} alt="cover" />
       </section>
       <section className='mt-20 flex flex-col space-y-10 mx-5 md:mx-0 md:w-[90%] xl:w-[80%]'>
         <Heading text={'Other Screens'} />

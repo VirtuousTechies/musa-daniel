@@ -3,7 +3,7 @@ import { cancel, dotDesign, rideCursor, rideGoal, rideMainOne, rideMainTwo, ride
 tick, underline } from '../Data'
 import DesignProcess from './DesignProcess'
 import { Heading, TargetAudience } from '.'
-import { rideEaseData, targetAudience } from '../Data/demo'
+import { rideEaseData, rideEaseScreens, targetAudience } from '../Data/demo'
 
 export default function RideEaseBody() {
   return (
@@ -121,6 +121,12 @@ export default function RideEaseBody() {
                 </div>
             </div>))}
         </section>
+    </section>
+    <section className='mt-20 flex flex-col space-y-10 mx-5 md:mx-0 md:w-[90%] xl:w-[80%]'>
+        <Heading text={'Other Screens'} />
+        <figure className='grid grid-cols-3 gap-20'>
+            {rideEaseScreens.map((src) => <img src={src} alt="screens" />)}
+        </figure>
     </section>
   </section>
   )

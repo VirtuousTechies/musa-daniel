@@ -1,5 +1,5 @@
 import React from 'react'
-import { dotDesign, rideCursor, rideMainOne, rideMainTwo, rideOne, rideTarget, underline } from '../Data'
+import { dotDesign, rideCursor, rideGoal, rideMainOne, rideMainTwo, rideOne, rideTarget, underline } from '../Data'
 import DesignProcess from './DesignProcess'
 import { Heading, TargetAudience } from '.'
 import { rideEaseData, targetAudience } from '../Data/demo'
@@ -57,8 +57,26 @@ export default function RideEaseBody() {
         </div>
         <img src={rideOne} alt="phone-image" className='self-center w-[60%] 
         md:w-[12rem] lg:w-full' />
-      </section>
-    <section></section>
+    </section>
+    <section className='flex flex-col space-y-10 md:space-y-0 md:flex-row md:justify-between 
+    mx-5 md:mx-0 mt-20 md:w-[90%] xl:w-[80%]'>
+        <img src={rideGoal} alt="phone-image" className='self-center w-[60%] 
+        md:w-[12rem] lg:w-[20rem]' />
+        <div className='flex flex-col space-y-5 w-[50%]'>
+          <div className='flex flex-col space-y-2'>
+            <Heading text={'Product Statement'}/>
+            <p className='text-center md:text-start font-three font-normal tracking-tight 
+            leading-6 text-base md:text-lg md:w-[88%]'>
+            {rideEaseData.productStatement}</p>
+          </div>
+          <div className='flex flex-col space-y-2'>
+            <Heading text={'Goals'} width={true}/>
+            <p className='text-center md:text-start font-three font-normal tracking-tight 
+            leading-6 text-base md:text-lg md:w-[98%]'>
+            {rideEaseData.goals}</p>
+          </div>
+        </div>
+    </section>
     <DesignProcess />
     <TargetAudience ride={true} img={rideTarget} data={targetAudience.rideEase} />
     <section></section>

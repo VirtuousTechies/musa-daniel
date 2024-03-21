@@ -28,6 +28,7 @@ export {default as underline} from './images/ride-ease/underline.png'
 export {default as rideCursor} from './images/ride-ease/ride-ease-cursor.png'
 export {default as rideTarget} from './images/ride-ease/target-audience.png'
 export {default as rideOne} from './images/ride-ease/ride-ease-one.png'
+export {default as rideGoal} from './images/ride-ease/ride-goal.png'
 
 export {default as adBlockerMainOne} from './images/ad-blocker/ad-blocker-main-one.png'
 export {default as adBlockerMainTwo} from './images/ad-blocker/ad-blocker-main-two.png'

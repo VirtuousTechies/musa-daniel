@@ -7,7 +7,7 @@ import { cancel, dotDesign, rideCursor, rideGoal, rideMainOne, rideMainTwo, ride
 tick, underline } from '../Data'
 import DesignProcess from './DesignProcess'
 import { Heading, TargetAudience } from '.'
-import { rideEaseData, rideEaseScreens, targetAudience } from '../Data/demo'
+import { hf, rideEaseData, rideEaseScreens, targetAudience } from '../Data/demo'
 
 export default function RideEaseBody() {
   return (
@@ -138,6 +138,14 @@ export default function RideEaseBody() {
                 <img src={sketchFour} alt="four" className='max-w-[46%] lg:max-w-[49%]' />
             </div>
         </figure>
+    </section>
+    <section className='mt-20 flex flex-col space-y-60 mx-5 md:mx-0 md:w-[90%] xl:w-[80%]'>
+        <Heading text={'High Fidelity Screen'} />
+        <div className='relative w-[72rem] bg-[#3676E0] h-[529.33px] -ml-10'>
+            <figure className='absolute -top-48 left-8 grid grid-cols-3 gap-x-10'>
+                {hf.map((src) => <img key={src} src={src} alt="screens" />)}
+            </figure>
+        </div>
     </section>
     <section className='mt-20 flex flex-col space-y-10 mx-5 md:mx-0 md:w-[90%] xl:w-[80%]'>
         <Heading text={'Other Screens'} />

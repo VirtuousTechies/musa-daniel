@@ -44,6 +44,8 @@ export {default as sketchOne} from './images/ride-ease/sketch-one.png'
 export {default as sketchTwo} from './images/ride-ease/sketch-two.png'
 export {default as sketchThree} from './images/ride-ease/sketch-three.png'
 export {default as sketchFour} from './images/ride-ease/sketch-four.png'
+export {default as hfOne} from './images/ride-ease/hf-one.png'
+export {default as hfTwo} from './images/ride-ease/hf-two.png'
 
 export {default as adBlockerMainOne} from './images/ad-blocker/ad-blocker-main-one.png'
 export {default as adBlockerMainTwo} from './images/ad-blocker/ad-blocker-main-two.png'

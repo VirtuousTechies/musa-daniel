@@ -1,5 +1,9 @@
 import React from 'react'
 import { cancel, dotDesign, rideCursor, rideGoal, rideMainOne, rideMainTwo, rideOne, rideTarget, 
+    sketchFour, 
+    sketchOne, 
+    sketchThree, 
+    sketchTwo, 
 tick, underline } from '../Data'
 import DesignProcess from './DesignProcess'
 import { Heading, TargetAudience } from '.'
@@ -121,6 +125,19 @@ export default function RideEaseBody() {
                 </div>
             </div>))}
         </section>
+    </section>
+    <section className='mt-20 flex flex-col space-y-10 mx-5 md:mx-0 md:w-[90%] xl:w-[80%]'>
+        <Heading text={'Sketches/Low-fidelity Wireframes'} />
+        <figure className='flex flex-col space-y-5'>
+            <div className='flex flex-row w-[inherit]'>
+                <img src={sketchOne} alt="one" className='max-w-[48%] lg:max-w-[49%]' />
+                <img src={sketchTwo} alt="two" className='max-w-[48%] lg:max-w-[49%]'/>
+            </div>
+            <div className='flex flex-row space-x-5'>
+                <img src={sketchThree} alt="three" className='max-w-[46%] lg:max-w-[49%]'/>
+                <img src={sketchFour} alt="four" className='max-w-[46%] lg:max-w-[49%]' />
+            </div>
+        </figure>
     </section>
     <section className='mt-20 flex flex-col space-y-10 mx-5 md:mx-0 md:w-[90%] xl:w-[80%]'>
         <Heading text={'Other Screens'} />

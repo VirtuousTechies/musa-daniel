@@ -139,10 +139,14 @@ export default function RideEaseBody() {
             </div>
         </figure>
     </section>
-    <section className='mt-20 flex flex-col space-y-60 mx-5 md:mx-0 md:w-[90%] xl:w-[80%]'>
+    <section className='mt-20 flex flex-col space-y-10 md:space-y-60 mx-5 md:mx-0 
+    w-full md:w-[90%] xl:w-[80%]'>
         <Heading text={'High Fidelity Screen'} />
-        <div className='relative w-[72rem] bg-[#3676E0] h-[529.33px] -ml-10'>
-            <figure className='absolute -top-48 left-8 grid grid-cols-3 gap-x-10'>
+        <div className='relative w-full h-full px-5 py-10 md:p-0 lg:w-[60rem] 
+        xl:w-[72rem] bg-[#3676E0] md:h-[280px] lg:h-[470px] xl:h-[529.33px] lg:-ml-5 
+        xl:-ml-10'>
+            <figure className='md:absolute -top-48 left-0 xl:left-8 grid grid-cols-1 gap-10 
+            md:gap-y-0 md:grid-cols-3 md:gap-x-10'>
                 {hf.map((src) => <img key={src} src={src} alt="screens" />)}
             </figure>
         </div>

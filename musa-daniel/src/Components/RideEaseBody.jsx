@@ -124,8 +124,8 @@ export default function RideEaseBody() {
     </section>
     <section className='mt-20 flex flex-col space-y-10 mx-5 md:mx-0 md:w-[90%] xl:w-[80%]'>
         <Heading text={'Other Screens'} />
-        <figure className='grid grid-cols-3 gap-20'>
-            {rideEaseScreens.map((src) => <img src={src} alt="screens" />)}
+        <figure className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20'>
+            {rideEaseScreens.map((src) => <img key={src} src={src} alt="screens" />)}
         </figure>
     </section>
   </section>

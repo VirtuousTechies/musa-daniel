@@ -79,7 +79,12 @@ export default function RideEaseBody() {
     </section>
     <DesignProcess />
     <TargetAudience ride={true} img={rideTarget} data={targetAudience.rideEase} />
-    <section></section>
+    <section className='mt-20 flex flex-col space-y-2 mx-5 md:mx-0 md:w-[90%] xl:w-[80%]'>
+        <Heading text={'User Research'}/>
+        <p className='text-center md:text-start font-three font-normal tracking-tight 
+        leading-6 text-base md:text-lg md:w-[88%]'>
+        {rideEaseData.userResearch}</p>
+    </section>
     <section></section>
   </section>
   )

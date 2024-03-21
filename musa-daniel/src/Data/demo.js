@@ -152,5 +152,9 @@ export const rideEaseData = {
     productObjective: {
         text: 'The main objective of the project was to design and develop a ride-sharing app that would simplify the process of requesting and providing rides. The app needed to be easy to use, visually appealing, and functional across a variety of devices and operating systems. Key objectives included:',
         list:["Designing an intuitive user interface that would allow users to quickly and easily request a ride, track the driver's progress, and make payments.", "Developing a robust back-end system that would efficiently match passengers with drivers based on location and availability.", "Incorporating safety features such as driver background checks, GPS tracking, and emergency assistance options.", "Implementing a flexible pricing structure that would be affordable for passengers while providing fair compensation for drivers."]
+    },
+    userResearch:'I conducted user research to understand pain points that riders and drivers face when using the app. I interviewed riders and drivers, and conducted surveys to gather feedback on the current app. We also analyzed user reviews of the app in the app store.',
+    competitiveAnalysis:{
+        text:'This chart compares the features of the ride-sharing app with those of its competitors, including Uber, Lyft, and Grab. The features listed include in-app safety features, rewards programs, eco-friendly options, and seamless integration with public transportation. By examining the features offered by each competitor, the ride-sharing app can identify areas where it can differentiate itself and offer unique value to its users.'
     }
 }

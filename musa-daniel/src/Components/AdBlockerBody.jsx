@@ -80,9 +80,10 @@ export default function AdBlockerBody() {
       <TargetAudience ride={false} img={adTarget} data={targetAudience.adBlocker} />
       <section className='mt-20 flex flex-col space-y-10 mx-5 md:mx-0 md:w-[90%] xl:w-[80%]'>
         <Heading text={'User Research'} />
-        <ol className='list-disc mx-5 md:mx-0 md:ml-5'>
+        <ol className='flex flex-col list-disc mx-5 md:mx-0 md:ml-5'>
           {adBlockerData.userResearch.map((item => <li key={item} className='font-three 
-          font-normal tracking-tight leading-6 text-base md:text-lg lg:w-[90%]'>
+          font-normal tracking-tight leading-6 text-base md:text-lg lg:w-[90%] self-center 
+          md:self-start'>
           {item}</li>))}
         </ol>
       </section>

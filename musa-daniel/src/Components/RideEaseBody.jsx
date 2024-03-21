@@ -89,10 +89,10 @@ export default function RideEaseBody() {
     <section className='mt-20 flex flex-col space-y-2 mx-5 md:mx-0 md:w-[90%] xl:w-[80%]'>
         <Heading text={'Competitive Analysis'}/>
         <p className='text-center md:text-start font-three font-normal tracking-tight 
-        leading-6 text-base md:text-lg md:w-[88%]'>
+        leading-6 text-base md:text-lg mx-5 md:mx-0 md:w-[88%]'>
         {rideEaseData.competitiveAnalysis.text}</p>
-        <section className='flex flex-col space-y-3 overflow-y-scroll lg:w-auto 
-        lg:overflow-y-hidden'>
+        <section className='flex flex-col space-y-3 overflow-y-scroll w-screen px-5 md:px-0 
+        md:w-auto lg:overflow-y-hidden'>
             {rideEaseData.competitiveAnalysis.data.map((item => <div key={item.heading} 
             className='grid grid-cols-4 gap-5 md:gap-3 lg:gap-0 font-three font-medium 
             tracking-tight leading-6 text-base md:text-lg mt-10 w-max lg:w-auto'>

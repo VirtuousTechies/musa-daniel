@@ -137,28 +137,20 @@ export const adBlockerData = {
     productOverview: 'The goal of this design project is to create a comprehensive Ad Blocker and VPN app that provides users with a seamless and secure browsing experience. The app aims to block intrusive ads, enhance user privacy through VPN functionality, and offer an intuitive and user-friendly interface.',
     productStatement: 'Users often face intrusive ads while browsing, compromising both their privacy and user experience. Additionally, there is a growing concern about online privacy, making VPN functionality essential. The challenge is to design an integrated solution that effectively blocks ads and provides a reliable VPN service while maintaining a simple and user-centric design.',
     goals: ['Develop a user-friendly interface that caters to both novice and experienced users.', 'Prioritize user privacy and security in the VPN functionality.', "Efficiently block ads without compromising the website's functionality.", 'Ensure a seamless transition between ad-blocking and VPN features.'],
-    targetAudience: [
-        {
-            title: 'Privacy-Conscious Users:',
-            description:'Individuals who prioritize their online privacy and seek tools to protect personal information from trackers and data collection.'
-        },
-        {
-            title: 'Tech-Savvy Professionals:',
-            description:'Professionals who use the internet for work and value a secure and uninterrupted browsing experience. They may be concerned about corporate espionage, data leaks, or unauthorized access to sensitive information.'
-        },
-        {
-            title: 'Frequent Travelers:',
-            description:'People who frequently travel and use public Wi-Fi networks, recognizing the need for a VPN to secure their internet connection and protect against potential threats.'
-        },
-        {
-            title: 'Digital Nomads:',
-            description:'Individuals who work remotely and rely heavily on the internet for their livelihood. They may prioritize both ad-blocking and VPN features for an efficient and secure online work environment.'
-        },
-    ],
     userResearch: ['Conducted user interviews and surveys to understand user pain points related to online ads and privacy concerns.', 'Analyzed competitor apps to identify strengths, weaknesses, and opportunities for differentiation.', 'Researched the latest trends in ad-blocking technology and VPN services.']
 }
 
 export const targetAudience = {
     rideEase: ['Urban Dwellers: People living in densely populated areas where parking can be difficult to find and owning a car can be expensive.', 'Commuters: People who need to travel to and from work or school and want an alternative to public transportation.', 'Young Adults: People who may not have a car or who prefer not to own a car and are looking for an affordable transportation option.', 'Travelers: People who are visiting a new city and need a reliable transportation option to get around.'],
     adBlocker: [ ['Privacy-Conscious Users:', 'Individuals who prioritize their online privacy and seek tools to protect personal information from trackers and data collection.'], ['Tech-Savvy Professionals:', 'Professionals who use the internet for work and value a secure and uninterrupted browsing experience. They may be concerned about corporate espionage, data leaks, or unauthorized access to sensitive information.'], ['Frequent Travelers:', 'People who frequently travel and use public Wi-Fi networks, recognizing the need for a VPN to secure their internet connection and protect against potential threats.'], ['Digital Nomads:', 'Individuals who work remotely and rely heavily on the internet for their livelihood. They may prioritize both ad-blocking and VPN features for an efficient and secure online work environment.'] ]
+}
+
+export const rideEaseData = {
+    productOverview: 'RideEase is a mobile application that connects passengers with nearby drivers to provide quick and convenient transportation services. The app is designed to provide a seamless user experience for both drivers and passengers, with features that prioritize safety, reliability, and affordability.',
+    productStatement: 'Urban transportation can be unreliable, expensive, and unsafe, creating a need for a safe, convenient, and affordable ride-sharing app that meets the needs of modern consumers.',
+    goals: 'To design and develop a ride-sharing app that simplifies the process of requesting and providing rides, efficiently matches passengers with drivers, incorporates safety features, and balances affordability for passengers with fair compensation for drivers. By achieving these goals, the app aims to improve the overall ride-sharing experience and address the transportation challenges faced by modern consumers.',
+    productObjective: {
+        text: 'The main objective of the project was to design and develop a ride-sharing app that would simplify the process of requesting and providing rides. The app needed to be easy to use, visually appealing, and functional across a variety of devices and operating systems. Key objectives included:',
+        list:["Designing an intuitive user interface that would allow users to quickly and easily request a ride, track the driver's progress, and make payments.", "Developing a robust back-end system that would efficiently match passengers with drivers based on location and availability.", "Incorporating safety features such as driver background checks, GPS tracking, and emergency assistance options.", "Implementing a flexible pricing structure that would be affordable for passengers while providing fair compensation for drivers."]
+    }
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import { dotDesign, rideCursor, rideGoal, rideMainOne, rideMainTwo, rideOne, rideTarget, underline } from '../Data'
+import { cancel, dotDesign, rideCursor, rideGoal, rideMainOne, rideMainTwo, rideOne, rideTarget, tick, underline } from '../Data'
 import DesignProcess from './DesignProcess'
 import { Heading, TargetAudience } from '.'
 import { rideEaseData, targetAudience } from '../Data/demo'
@@ -85,7 +85,40 @@ export default function RideEaseBody() {
         leading-6 text-base md:text-lg md:w-[88%]'>
         {rideEaseData.userResearch}</p>
     </section>
-    <section></section>
+    <section className='mt-20 flex flex-col space-y-2 mx-5 md:mx-0 md:w-[90%] xl:w-[80%]'>
+        <Heading text={'Competitive Analysis'}/>
+        <p className='text-center md:text-start font-three font-normal tracking-tight 
+        leading-6 text-base md:text-lg md:w-[88%]'>
+        {rideEaseData.competitiveAnalysis.text}</p>
+        <section className='flex flex-col space-y-3'>
+            {rideEaseData.competitiveAnalysis.data.map((item => <div key={item.heading} 
+            className='grid grid-cols-4 font-three font-medium tracking-tight leading-6 
+            text-base md:text-lg mt-10'>
+                <div className='flex items-center justify-center w-[250px] h-[90px] 
+                bg-[#EBF3FE] rounded-[4.35px] text-[#193767] font-semibold'>
+                    <p className='text-center w-[80%]'>{item.heading}</p>
+                </div>
+                <div className='flex items-center justify-center w-[250px] h-[90px] 
+                bg-[#F2F3F5] rounded-[4.35px] text-[#171717]'>
+                    {item.one == 'yes' || item.one == 'no' ? <img src={item.one == 'yes' ? tick 
+                    : cancel} className='w-[40px]' /> 
+                    : <p className='text-center'>{item.one}</p>}
+                </div>
+                <div className='flex items-center justify-center w-[250px] h-[90px] 
+                bg-[#F2F3F5] rounded-[4.35px] text-[#171717]'>
+                    {item.two == 'yes' || item.two == 'no' ? <img src={item.two == 'yes' ? tick 
+                    : cancel} className='w-[40px]' /> 
+                    : <p className='text-center'>{item.two}</p>}
+                </div>
+                <div className='flex items-center justify-center w-[250px] h-[90px]
+                bg-[#F2F3F5] rounded-[4.35px] text-[#171717]'>
+                    {item.three == 'yes' || item.three == 'no' ? <img src={item.three == 'yes' ? tick 
+                    : cancel} className='w-[40px]' /> 
+                    : <p className='text-center'>{item.three}</p>}
+                </div>
+            </div>))}
+        </section>
+    </section>
   </section>
   )
 }

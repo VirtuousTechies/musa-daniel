@@ -155,6 +155,44 @@ export const rideEaseData = {
     },
     userResearch:'I conducted user research to understand pain points that riders and drivers face when using the app. I interviewed riders and drivers, and conducted surveys to gather feedback on the current app. We also analyzed user reviews of the app in the app store.',
     competitiveAnalysis:{
-        text:'This chart compares the features of the ride-sharing app with those of its competitors, including Uber, Lyft, and Grab. The features listed include in-app safety features, rewards programs, eco-friendly options, and seamless integration with public transportation. By examining the features offered by each competitor, the ride-sharing app can identify areas where it can differentiate itself and offer unique value to its users.'
+        text:'This chart compares the features of the ride-sharing app with those of its competitors, including Uber, Lyft, and Grab. The features listed include in-app safety features, rewards programs, eco-friendly options, and seamless integration with public transportation. By examining the features offered by each competitor, the ride-sharing app can identify areas where it can differentiate itself and offer unique value to its users.',
+        data: [
+            {
+                heading: 'Company Name',
+                one: 'Uber',
+                two: 'Lyft',
+                three: 'RideEase'
+            },
+            {
+                heading: 'In-app Safety Features',
+                one: 'yes',
+                two: 'yes',
+                three: 'yes'
+            },
+            {
+                heading: 'Rewards Program',
+                one: 'yes',
+                two: 'yes',
+                three: 'yes'
+            },
+            {
+                heading: 'Eco-Friendly Options',
+                one: 'no',
+                two: 'no',
+                three: 'yes'
+            },
+            {
+                heading: 'Seamless Integration with Public Transportation',
+                one: 'no',
+                two: 'no',
+                three: 'yes'
+            },
+            {
+                heading: 'Group Ride',
+                one: 'no',
+                two: 'yes',
+                three: 'yes'
+            },
+        ]
     }
 }

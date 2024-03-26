@@ -1,12 +1,13 @@
 import React from 'react'
 import { cancel, dotDesign, rideCursor, rideGoal, rideMainOne, rideMainTwo, rideOne, rideTarget, 
+    sarah, 
     sketchFour, 
     sketchOne, 
     sketchThree, 
     sketchTwo, 
 tick, underline } from '../Data'
 import DesignProcess from './DesignProcess'
-import { Heading, TargetAudience } from '.'
+import { Empathy, Heading, TargetAudience } from '.'
 import { hf, rideEaseData, rideEaseScreens, targetAudience } from '../Data/demo'
 
 export default function RideEaseBody() {
@@ -136,7 +137,7 @@ export default function RideEaseBody() {
         <div className='flex flex-col'>
             <h2 className='font-three font-bold text-2xl mb-3'>Screening criteria</h2>
             {rideEaseData.quantitativeResearch.screeningCriteria.map((item) => <div className='
-            flex flex-row space-x-2 items-center mt-2'>
+            flex flex-row space-x-2 items-center mt-2' key={item}>
                 <div className='self-center w-[10.45px] bg-[#3676E0] h-[2px] rounded-sm'></div>
                 <p className='text-center md:text-start font-three font-normal tracking-tight 
                 leading-3 text-sm md:text-base mx-5 md:mx-0 md:w-[77%]'>{item}</p>
@@ -146,12 +147,32 @@ export default function RideEaseBody() {
             <h2 className='font-three font-bold text-2xl mb-3'>Observations</h2>
             <section className='grid grid-cols-2 gap-12'>
                 {rideEaseData.quantitativeResearch.observations.map((item) => <div className='
-                flex flex-col space-y-5 mt-2'>
+                flex flex-col space-y-5 mt-2' key={item.text}>
                     <p className='font-three font-bold text-2xl text-[#3676E0]'>{item.percent}</p>
                     <p className='text-center md:text-start font-three font-normal tracking-tight 
                     leading-3 text-sm md:text-base mx-5 md:mx-0 md:w-[80%]'>{item.text}</p>
                 </div>)}
             </section>
+        </div>
+    </section>
+    <section className='mt-20 flex flex-col mx-5 md:mx-0 md:w-[90%] xl:w-[80%]'>
+        <Heading text={'Empathy Map'} />
+        <div className='grid grid-cols-3 mt-10 w-full'>
+            <Empathy others={false} data={rideEaseData.empathyMap.says} text={'Says'}  />
+            <figure className='flex flex-row space-x-2 items-center mt-32'>
+                <div className='bg-[#738198] w-[142.78px] h-[2px] rounded-[0.8px]'></div>
+                <div className='flex flex-col space-y-2 items-center'>
+                    <div className='bg-[#738198] h-[142.78px] w-[2px] rounded-[0.8px]'></div>
+                    <img src={sarah} alt="sarah" />
+                    <div className='bg-[#738198] h-[142.78px] w-[2px] rounded-[0.8px]'></div>
+                </div>
+                <div className='bg-[#738198] w-[142.78px] h-[2px] rounded-[0.8px]'></div>
+            </figure>
+            <Empathy others={true} data={rideEaseData.empathyMap.thinks} text={'Thinks'} />
+        </div>
+        <div className='flex flex-row justify-between w-full -mt-44'>
+            <Empathy others={true} data={rideEaseData.empathyMap.does} text={'Does'}/>
+            <Empathy others={true} data={rideEaseData.empathyMap.feels} text={'Feels'}/>
         </div>
     </section>
     <section className='mt-20 flex flex-col space-y-10 mx-5 md:mx-0 md:w-[90%] xl:w-[80%]'>

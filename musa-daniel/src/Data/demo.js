@@ -226,6 +226,12 @@ export const rideEaseData = {
             },
 
         ]
+    },
+    empathyMap: {
+        says: ["I hate when the price surges during rush hour, it makes me feel like I'm being taken advantage of.", "I always check the license plate and driver information before getting into the car to make sure I'm safe.", "I wish there were more electric vehicles available for ride-sharing, it would make me feel better about my impact on the environment."],
+        thinks: ['Frustrated with surge pricing during peak hours', 'Worries about safety when using ride-sharing apps at night', 'Wants to use eco-friendly transportation options when possible', 'Appreciates the convenience of ride-sharing for her daily commute'],
+        does: ['Checks multiple ride-sharing apps to compare prices before booking a ride', 'Only uses ride-sharing apps during daylight hours when she feels safer', 'Regularly uses ride-sharing apps for her daily commute to avoid the stress and cost of driving in Chicago traffic.', 'Chooses eco-friendly ride-sharing options when they are available and affordable'],
+        feels: ['Annoyed when her ride costs more than she expected due to surge pricing', 'Anxious about her safety when using ride-sharing apps at night', 'Guilty about contributing to environmental pollution when using ride-sharing apps', 'Grateful for the convenience and time-saving benefits of ride-sharing'],
     }
 }
 

@@ -157,22 +157,24 @@ export default function RideEaseBody() {
     </section>
     <section className='mt-20 flex flex-col mx-5 md:mx-0 md:w-[90%] xl:w-[80%]'>
         <Heading text={'Empathy Map'} />
-        <div className='grid grid-cols-3 mt-10 w-full'>
-            <Empathy others={false} data={rideEaseData.empathyMap.says} text={'Says'}  />
-            <figure className='flex flex-row space-x-2 items-center mt-32'>
-                <div className='bg-[#738198] w-[142.78px] h-[2px] rounded-[0.8px]'></div>
-                <div className='flex flex-col space-y-2 items-center'>
-                    <div className='bg-[#738198] h-[142.78px] w-[2px] rounded-[0.8px]'></div>
-                    <img src={sarah} alt="sarah" />
-                    <div className='bg-[#738198] h-[142.78px] w-[2px] rounded-[0.8px]'></div>
-                </div>
-                <div className='bg-[#738198] w-[142.78px] h-[2px] rounded-[0.8px]'></div>
-            </figure>
-            <Empathy others={true} data={rideEaseData.empathyMap.thinks} text={'Thinks'} />
-        </div>
-        <div className='flex flex-row justify-between w-full -mt-44'>
-            <Empathy others={true} data={rideEaseData.empathyMap.does} text={'Does'}/>
-            <Empathy others={true} data={rideEaseData.empathyMap.feels} text={'Feels'}/>
+        <div className='flex flex-col ml-10 mt-10 -space-y-44 w-full'>
+            <div className='flex flex-row -space-x-10'>
+                <Empathy others={false} data={rideEaseData.empathyMap.says} text={'Says'}  />
+                <figure className='flex flex-row space-x-2 items-center mt-32'>
+                    <div className='bg-[#738198] w-[142.78px] h-[2px] rounded-[0.8px]'></div>
+                    <div className='flex flex-col space-y-2 items-center'>
+                        <div className='bg-[#738198] h-[142.78px] w-[2px] rounded-[0.8px]'></div>
+                        <img src={sarah} alt="sarah" />
+                        <div className='bg-[#738198] h-[142.78px] w-[2px] rounded-[0.8px]'></div>
+                    </div>
+                    <div className='bg-[#738198] w-[142.78px] h-[2px] rounded-[0.8px]'></div>
+                </figure>
+                <Empathy others={true} data={rideEaseData.empathyMap.thinks} text={'Thinks'} />
+            </div>
+            <div className='flex flex-row justify-between'>
+                <Empathy others={true} data={rideEaseData.empathyMap.does} text={'Does'}/>
+                <Empathy others={true} data={rideEaseData.empathyMap.feels} text={'Feels'}/>
+            </div>
         </div>
     </section>
     <section className='mt-20 flex flex-col space-y-10 mx-5 md:mx-0 md:w-[90%] xl:w-[80%]'>

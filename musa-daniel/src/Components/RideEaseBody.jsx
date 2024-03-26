@@ -126,6 +126,34 @@ export default function RideEaseBody() {
             </div>))}
         </section>
     </section>
+    <section className='mt-20 flex flex-col space-y-8 mx-5 md:mx-0 md:w-[90%] xl:w-[80%]'>
+        <div>
+            <Heading text={'Quantitative Research'}/>
+            <p className='text-center md:text-start font-three font-normal tracking-tight 
+            leading-6 text-base md:text-lg mx-5 md:mx-0 md:w-[88%] mt-3'>
+            {rideEaseData.quantitativeResearch.text}</p>
+        </div>
+        <div className='flex flex-col'>
+            <h2 className='font-three font-bold text-2xl mb-3'>Screening criteria</h2>
+            {rideEaseData.quantitativeResearch.screeningCriteria.map((item) => <div className='
+            flex flex-row space-x-2 items-center mt-2'>
+                <div className='self-center w-[10.45px] bg-[#3676E0] h-[2px] rounded-sm'></div>
+                <p className='text-center md:text-start font-three font-normal tracking-tight 
+                leading-3 text-sm md:text-base mx-5 md:mx-0 md:w-[77%]'>{item}</p>
+            </div>)}
+        </div>
+        <div className='flex flex-col'>
+            <h2 className='font-three font-bold text-2xl mb-3'>Observations</h2>
+            <section className='grid grid-cols-2 gap-12'>
+                {rideEaseData.quantitativeResearch.observations.map((item) => <div className='
+                flex flex-col space-y-5 mt-2'>
+                    <p className='font-three font-bold text-2xl text-[#3676E0]'>{item.percent}</p>
+                    <p className='text-center md:text-start font-three font-normal tracking-tight 
+                    leading-3 text-sm md:text-base mx-5 md:mx-0 md:w-[80%]'>{item.text}</p>
+                </div>)}
+            </section>
+        </div>
+    </section>
     <section className='mt-20 flex flex-col space-y-10 mx-5 md:mx-0 md:w-[90%] xl:w-[80%]'>
         <Heading text={'Sketches/Low-fidelity Wireframes'} />
         <figure className='flex flex-col space-y-5'>

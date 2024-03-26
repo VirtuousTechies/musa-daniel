@@ -194,6 +194,38 @@ export const rideEaseData = {
                 three: 'yes'
             },
         ]
+    },
+    quantitativeResearch: {
+        text: 'We conducted a survey of 500 current ride-sharing users to gather quantitative data on their preferences and experiences with ride-sharing apps. The survey was conducted online and included questions on the following topics:',
+        screeningCriteria: ['Use ride-sharing apps on a regular basis', 'Are between the ages of 18 and 60', 'Have access to a smartphone', "Live in an urban or suburban area with a high demand for ride-sharing services", "Have a valid driver's license and are comfortable using ride-sharing services as both a passenger and a driver (if the app includes a driver component)"],
+        observations: [
+            {
+                percent: '75%',
+                text: 'Frequency of use: We asked users how often they use ride-sharing apps, and found that 70% of respondents use a ride-sharing app at least once a week.'
+
+            },
+            {
+                percent: '55% Uber, 35% Lyft',
+                text: 'App preferences: We asked users which ride-sharing app they use most frequently, and found that 55% of respondents use Uber most often, while 35% use Lyft most often.'
+
+            },
+            {
+                percent: '85%',
+                text: 'Safety features: We asked users how important in-app safety features are to them when choosing a ride-sharing app, and found that 85% of respondents said that safety features are very important.'
+
+            },
+            {
+                percent: '60%',
+                text: 'Eco-friendly options: We asked users how likely they are to use a ride-sharing app that offers eco-friendly options, such as electric vehicles, and found that 60% of respondents said that they are very likely or somewhat likely to use such an app.'
+
+            },
+            {
+                percent: '75%',
+                text: 'Group ride options: We asked users if they would be interested in using a ride-sharing app that offers group ride options, and found that 75% of respondents said that they would be interested.'
+
+            },
+
+        ]
     }
 }
 

@@ -203,8 +203,9 @@ export default function RideEaseBody() {
     </section>
     <section className='mt-20 flex flex-col space-y-8 mx-5 md:mx-0 md:w-[90%] xl:w-[80%]'>
         <Heading text={'User Persona'} />
-        <div className='flex flex-row space-x-5'>
-            <div className='flex flex-col space-y-3 bg-[#EBF3FE] px-5 py-10 w-[30%] rounded-md'>
+        <div className='flex flex-col space-y-5 md:space-y-0 md:flex-row md:space-x-5'>
+            <div className='flex flex-col space-y-3 bg-[#EBF3FE] px-5 py-10 w-full md:w-[60%] lg:w-[30%] 
+            rounded-md h-max '>
                 <img src={sarah2} alt="sarah" />
                 {rideEaseData.userPersona.card.map((item => <div className='flex flex-row 
                 justify-between text-sm' key={item.title}>
@@ -212,30 +213,30 @@ export default function RideEaseBody() {
                     <p className='text-black font-medium font-three'>{item.value}</p>
                 </div>))}
             </div>
-            <div className='grid grid-cols-2 gap-5'>
-                <div className='col-span-2 rounded-md bg-[#EBF3FE] flex flex-col space-y-3 
-                p-3 pl-5 w-max h-max'>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-5'>
+                <div className='col-span-1 md:col-span-2 rounded-md bg-[#EBF3FE] flex flex-col space-y-3 
+                p-3 pl-5 md:w-max md:h-max'>
                     <h2 className='text-[#193767] text-base font-three font-bold'>Bio</h2>
-                    <p className='text-black font-medium text-sm font-three w-[36rem]'>{rideEaseData.userPersona.bio}</p>
+                    <p className='text-black font-medium text-sm font-three w-full md:w-[23rem] lg:w-[36rem]'>{rideEaseData.userPersona.bio}</p>
                 </div>
                 <div className='col-span-1 rounded-md bg-[#EBF3FE] flex flex-col space-y-3 
                 p-3 pl-5'>
                     <h2 className='text-[#193767] text-base font-three font-bold'>Pain points</h2>
                     {rideEaseData.userPersona.painPoints.map((item) => <div className='flex 
-                    flex-row space-x-2 items-center mt-2 text-black w-max h-max' key={item}>
+                    flex-row space-x-2 items-center mt-2 text-black' key={item}>
                         <div className='self-center w-[10.45px] bg-[#3676E0] h-[2px] rounded-sm'></div>
                         <p className='text-center md:text-start font-three font-medium tracking-tight 
-                        text-sm mx-5 md:mx-0 md:w-[15rem]'>{item}</p>
+                        text-sm mx-5 md:mx-0  md:w-[16rem] lg:w-[15rem]'>{item}</p>
                     </div>)}
                 </div>
                 <div className='col-span-1 rounded-md bg-[#EBF3FE] flex flex-col space-y-3 
                 p-3 pl-5'>
                     <h2 className='text-[#193767] text-base font-three font-bold'>Goals</h2>
                     {rideEaseData.userPersona.goals.map((item) => <div className='flex 
-                    flex-row space-x-2 items-center mt-2 text-black w-max h-max' key={item}>
+                    flex-row space-x-2 items-center mt-2 text-black' key={item}>
                         <div className='self-center w-[10.45px] bg-[#3676E0] h-[2px] rounded-sm'></div>
                         <p className='text-center md:text-start font-three font-medium tracking-tight 
-                        text-sm mx-5 md:mx-0 md:w-[15rem]'>{item}</p>
+                        text-sm mx-5 md:mx-0 md:w-[16rem] lg:w-[15rem]'>{item}</p>
                     </div>)}
                 </div>
             </div>

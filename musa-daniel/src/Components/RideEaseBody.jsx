@@ -203,13 +203,41 @@ export default function RideEaseBody() {
     </section>
     <section className='mt-20 flex flex-col space-y-8 mx-5 md:mx-0 md:w-[90%] xl:w-[80%]'>
         <Heading text={'User Persona'} />
-        <div className='grid grid-cols-2'>
-            <div className='flex flex-col space-y-3 bg-[#EBF3FE] px-5 py-10 w-[60%] rounded-md'>
+        <div className='flex flex-row space-x-5'>
+            <div className='flex flex-col space-y-3 bg-[#EBF3FE] px-5 py-10 w-full rounded-md'>
                 <img src={sarah2} alt="sarah" />
-                {rideEaseData.userPersona.card.map((item => <div className='flex flex-row justify-between'>
-                    <p className='text-[#193767]'>{item.title}</p>
+                {rideEaseData.userPersona.card.map((item => <div className='flex flex-row 
+                justify-between' key={item.title}>
+                    <h2 className='text-[#193767]'>{item.title}</h2>
                     <p className='text-black'>{item.value}</p>
                 </div>))}
+            </div>
+            <div className='grid grid-cols-2 gap-5'>
+                <div className='col-span-2 rounded-md bg-[#EBF3FE] flex flex-col space-y-3 
+                p-3 pl-5'>
+                    <h2 className='text-[#193767]'>Bio</h2>
+                    <p className='text-black'>{rideEaseData.userPersona.bio}</p>
+                </div>
+                <div className='col-span-1 rounded-md bg-[#EBF3FE] flex flex-col space-y-3 
+                p-3 pl-5'>
+                    <h2 className='text-[#193767]'>Pain points</h2>
+                    {rideEaseData.userPersona.painPoints.map((item) => <div className='flex 
+                    flex-row space-x-2 items-center mt-2 text-black' key={item}>
+                        <div className='self-center w-[10.45px] bg-[#3676E0] h-[2px] rounded-sm'></div>
+                        <p className='text-center md:text-start font-three font-normal tracking-tight 
+                        leading-4 text-sm md:text-base mx-5 md:mx-0 md:w-[77%]'>{item}</p>
+                    </div>)}
+                </div>
+                <div className='col-span-1 rounded-md bg-[#EBF3FE] flex flex-col space-y-3 
+                p-3 pl-5'>
+                    <h2 className='text-[#193767]'>Goals</h2>
+                    {rideEaseData.userPersona.goals.map((item) => <div className='flex 
+                    flex-row space-x-2 items-center mt-2 text-black' key={item}>
+                        <div className='self-center w-[10.45px] bg-[#3676E0] h-[2px] rounded-sm'></div>
+                        <p className='text-center md:text-start font-three font-normal tracking-tight 
+                        leading-4 text-sm md:text-base mx-5 md:mx-0 md:w-[77%]'>{item}</p>
+                    </div>)}
+                </div>
             </div>
         </div>
     </section>

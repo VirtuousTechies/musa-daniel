@@ -233,18 +233,18 @@ export default function RideEaseBody() {
         <Heading text={'Style Guide'} />
         <div className='flex flex-col space-y-20'>
             <img src={base} alt="base" />
-            <figure className='flex flex-row space-x-10'>
-                <img src={foundation} alt="foundation" />
-                <div className='self-end flex flex-col space-y-10'>
-                    <p className='font-five text-[80px]'>Iconography</p>
+            <figure className='flex flex-col md:flex-row md:space-x-10'>
+                <img src={foundation} alt="foundation" className='hidden md:block'/>
+                <div className='md:self-end flex flex-col space-y-10'>
+                    <p className='font-five text-[50px] lg:text-[80px]'>Iconography</p>
                     <img src={iconography} alt="iconography" />
                 </div>
-                <img src={spine} alt="spine" className='self-end' />
+                <img src={spine} alt="spine" className='md:self-end hidden md:block' />
             </figure>
             <div className='flex flex-col space-y-5 py-5 pl-10 w-[inherit] bg-[#EDEBF5] 
             font-five rounded-md'>
                 <h2 className='text-black font-extrabold text-xl'>Tools</h2>
-                <div className='grid grid-cols-3 w-max'>
+                <div className='grid grid-cols-1 gap-y-5 md:gap-y-0 md:grid-cols-3 w-max'>
                     {rideEaseData.tools.map((item => <div key={item.heading} className='flex 
                     flex-col space-y-1 font-medium'>
                         <p className='text-[#738198] text-lg'>{item.heading}</p>

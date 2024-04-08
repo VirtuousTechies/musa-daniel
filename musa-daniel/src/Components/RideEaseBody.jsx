@@ -242,29 +242,45 @@ export default function RideEaseBody() {
             </div>
         </div>
     </section>
-    <section className='mt-20 flex flex-col space-y-10 mx-5 md:mx-0 md:w-[90%] xl:w-[80%]'>
+    <section className='mt-20 flex flex-col space-y-10 mx-5 md:mx-0 md:w-[90%] xl:w-[92%]'>
         <Heading text={'User Journey Map'} />
-        <h2>Persona: Sarah</h2>
-        <p><span>Goal:</span> Posuere eget sociis mauris dictum habitasse pharetra leo egestas pretium</p>
+        <div className='flex flex-col space-y-3'>
+            <h2 className='text-2xl font-bold font-three'>Persona: Sarah</h2>
+            <p className='text-lg font-normal font-three'><span className='text-[#3676E0]
+            font-semibold text-xl'>Goal:</span> Posuere eget sociis mauris dictum habitasse pharetra leo 
+            egestas pretium</p>
+        </div>
         <div className='flex flex-col space-y-5'>
-            <div className='grid grid-cols-6'>
-                <h2>Actions</h2>
-                {rideEaseData.userJourney.actions.map((item => <p key={item}>{item}</p>))}
+            <div className='grid grid-cols-6 gap-5'>
+                <h2 className='bg-[#EBF3FE] text-lg py-3 font-bold text-[#193767] rounded-md 
+                text-center font-three'>Actions</h2>
+                {rideEaseData.userJourney.actions.map((item => <p key={item} className='text-lg
+                bg-[#F2F3F5] text-center font-medium text-black rounded-md font-three pt-3'>
+                {item}</p>))}
             </div>
             <div className='grid grid-cols-6 gap-5'>
-                <h2>Task List</h2>
+                <h2 className='bg-[#EBF3FE] text-lg py-10 font-bold text-[#193767] rounded-md 
+                text-center h-max font-three'>Task List</h2>
                 {rideEaseData.userJourney.taskList.map((item => <ul key={item} className='flex 
-                flex-col space-y-2 list-decimal'>
-                   {item.map((list =>  <li key={list}>{list}</li>))}
+                flex-col space-y-2 list-decimal bg-[#F2F3F5] pt-3 rounded-md pl-8 pr-5'>
+                   {item.map((list =>  <li key={list} className='text-sm font-medium
+                    text-black font-three'>{list}</li>))}
                 </ul>))}
             </div>
             <div className='grid grid-cols-6 gap-5'>
-                <h2>Feeling</h2>
-                {rideEaseData.userJourney.feeling.map((item => <img key={item} src={item}/>))}
+                <h2 className='bg-[#EBF3FE] text-lg py-3 font-bold text-[#193767] rounded-md 
+                text-center font-three'>Feeling</h2>
+                {rideEaseData.userJourney.feeling.map((item => <figure key={item} className='
+                rounded-md bg-[#F2F3F5] flex justify-center'>
+                    <img src={item} className='self-center '/>
+                </figure>))}
             </div>
             <div className='grid grid-cols-6 gap-5'>
-                <h2>Thoughts</h2>
-                {rideEaseData.userJourney.thoughts.map((item => <p key={item}>{item}</p>))}
+                <h2 className='bg-[#EBF3FE] text-lg py-10 font-bold text-[#193767] rounded-md 
+                text-center h-max font-three'>Thoughts</h2>
+                {rideEaseData.userJourney.thoughts.map((item => <p key={item} className='text-sm
+                bg-[#F2F3F5] font-medium text-black rounded-md font-three pt-3 px-5'>
+                {item}</p>))}
             </div>
         </div>
     </section>

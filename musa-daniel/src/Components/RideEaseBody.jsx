@@ -159,7 +159,7 @@ export default function RideEaseBody() {
     w-screen md:w-[90%] xl:w-[80%]'>
         <Heading text={'Empathy Map'} />
         <div className='flex flex-col mx-5 lg:mx-0 lg:ml-10 mt-10 -space-y-32 lg:-space-y-44 
-        w-max md:w-full'>
+        w-max md:w-full lg:w-auto xl:w-full'>
             <div className='flex flex-row -space-x-28 lg:-space-x-10'>
                 <Empathy others={false} data={rideEaseData.empathyMap.says} text={'Says'}  />
                 <figure className='flex flex-row space-x-2 items-center mt-64 lg:mt-52 xl:mt-32'>
@@ -181,8 +181,9 @@ export default function RideEaseBody() {
     </section>
     <section className='mt-20 flex flex-col space-y-8 mx-5 md:mx-0 md:w-[90%] xl:w-[80%]'>
         <Heading text={'Pain Points'} />
-        <div className='flex flex-row space-x-20'>
-            <img src={pain} alt="pain" />
+        <div className='flex flex-col space-y-5 md:space-y-0 md:flex-row md:space-x-8 lg:space-x-20'>
+            <img src={pain} alt="pain" className='w-[22rem] h-[25rem] self-center 
+            lg:self-start lg:h-auto lg:w-auto' />
             <ol className='flex flex-col space-y-5'>
                 {rideEaseData.painPoints.map((list => <li key={list.id} className='flex flex-col
                 space-y-5 font-three text-[#3676E0]'>
@@ -190,7 +191,8 @@ export default function RideEaseBody() {
                         <span>{list.id}.</span>
                         <span className='text-white'>{list.heading}</span>
                     </div>
-                    <span className='font-three font-medium text-base text-white block w-[80%]'>{list.text}</span>
+                    <span className='font-three font-medium text-base text-white block w-full 
+                    lg:w-[80%]'>{list.text}</span>
                 </li>))}
             </ol>
         </div>

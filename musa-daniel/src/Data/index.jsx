@@ -53,6 +53,11 @@ export {default as foundation} from './images/ride-ease/foundation.png'
 export {default as iconography} from './images/ride-ease/iconography.png'
 export {default as spine} from './images/ride-ease/spine.png'
 export {default as sarah2} from './images/ride-ease/sarah2.png'
+export {default as laughing} from './images/ride-ease/laughing.png'
+export {default as relieved} from './images/ride-ease/relieved.png'
+export {default as smiling} from './images/ride-ease/smiling.png'
+export {default as thinking} from './images/ride-ease/thinking.png'
+
 
 export {default as adBlockerMainOne} from './images/ad-blocker/ad-blocker-main-one.png'
 export {default as adBlockerMainTwo} from './images/ad-blocker/ad-blocker-main-two.png'

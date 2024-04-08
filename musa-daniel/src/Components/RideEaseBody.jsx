@@ -1,10 +1,11 @@
 import React from 'react'
-import { cancel, dotDesign, pain, rideCursor, rideGoal, rideMainOne, rideMainTwo, rideOne, rideTarget, 
+import { base, cancel, dotDesign, foundation, iconography, pain, rideCursor, rideGoal, rideMainOne, rideMainTwo, rideOne, rideTarget, 
     sarah, 
     sketchFour, 
     sketchOne, 
     sketchThree, 
     sketchTwo, 
+    spine, 
 tick, underline } from '../Data'
 import DesignProcess from './DesignProcess'
 import { Empathy, Heading, TargetAudience } from '.'
@@ -227,6 +228,20 @@ export default function RideEaseBody() {
         <figure className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20'>
             {rideEaseScreens.map((src) => <img key={src} src={src} alt="screens" />)}
         </figure>
+    </section>
+    <section className='mt-20 flex flex-col space-y-20 mx-5 md:mx-0 md:w-[90%] xl:w-[80%]'>
+        <Heading text={'Style Guide'} />
+        <div className='flex flex-col space-y-20'>
+            <img src={base} alt="base" />
+            <figure className='flex flex-row space-x-10'>
+                <img src={foundation} alt="foundation" />
+                <div className='self-end flex flex-col space-y-10'>
+                    <p className='font-five text-[80px]'>Iconography</p>
+                    <img src={iconography} alt="iconography" />
+                </div>
+                <img src={spine} alt="spine" className='self-end' />
+            </figure>
+        </div>
     </section>
   </section>
   )

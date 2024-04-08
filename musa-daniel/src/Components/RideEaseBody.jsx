@@ -1,5 +1,5 @@
 import React from 'react'
-import { cancel, dotDesign, rideCursor, rideGoal, rideMainOne, rideMainTwo, rideOne, rideTarget, 
+import { cancel, dotDesign, pain, rideCursor, rideGoal, rideMainOne, rideMainTwo, rideOne, rideTarget, 
     sarah, 
     sketchFour, 
     sketchOne, 
@@ -140,7 +140,7 @@ export default function RideEaseBody() {
             flex flex-row space-x-2 items-center mt-2' key={item}>
                 <div className='self-center w-[10.45px] bg-[#3676E0] h-[2px] rounded-sm'></div>
                 <p className='text-center md:text-start font-three font-normal tracking-tight 
-                leading-4 md:leading-3 text-sm md:text-base mx-5 md:mx-0 md:w-[77%]'>{item}</p>
+                leading-4 text-sm md:text-base mx-5 md:mx-0 md:w-[77%]'>{item}</p>
             </div>)}
         </div>
         <div className='flex flex-col'>
@@ -150,12 +150,12 @@ export default function RideEaseBody() {
                 flex flex-col space-y-5 mt-2' key={item.text}>
                     <p className='font-three font-bold text-2xl text-[#3676E0]'>{item.percent}</p>
                     <p className='text-center md:text-start font-three font-normal tracking-tight 
-                    leading-4 md:leading-3 text-sm md:text-base mx-5 md:mx-0 md:w-[80%]'>{item.text}</p>
+                    leading-4 text-sm md:text-base mx-5 md:mx-0 md:w-[80%]'>{item.text}</p>
                 </div>)}
             </section>
         </div>
     </section>
-    <section className='mt-20 flex flex-col mx-5 md:mx-0 overflow-y-scroll md:overscroll-y-none
+    <section className='mt-20 flex flex-col mx-5 md:mx-0 overflow-y-scroll md:overflow-hidden
     w-screen md:w-[90%] xl:w-[80%]'>
         <Heading text={'Empathy Map'} />
         <div className='flex flex-col mx-5 lg:mx-0 lg:ml-10 mt-10 -space-y-32 lg:-space-y-44 
@@ -177,6 +177,22 @@ export default function RideEaseBody() {
                 <Empathy others={true} data={rideEaseData.empathyMap.does} text={'Does'}/>
                 <Empathy others={true} data={rideEaseData.empathyMap.feels} text={'Feels'}/>
             </div>
+        </div>
+    </section>
+    <section className='mt-20 flex flex-col space-y-8 mx-5 md:mx-0 md:w-[90%] xl:w-[80%]'>
+        <Heading text={'Pain Points'} />
+        <div className='flex flex-row space-x-20'>
+            <img src={pain} alt="pain" />
+            <ol className='flex flex-col space-y-5'>
+                {rideEaseData.painPoints.map((list => <li key={list.id} className='flex flex-col
+                space-y-5 font-three text-[#3676E0]'>
+                    <div className='flex flex-row space-x-3 font-semibold text-xl'>
+                        <span>{list.id}.</span>
+                        <span className='text-white'>{list.heading}</span>
+                    </div>
+                    <span className='font-three font-medium text-base text-white block w-[80%]'>{list.text}</span>
+                </li>))}
+            </ol>
         </div>
     </section>
     <section className='mt-20 flex flex-col space-y-10 mx-5 md:mx-0 md:w-[90%] xl:w-[80%]'>

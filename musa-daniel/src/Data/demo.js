@@ -232,7 +232,24 @@ export const rideEaseData = {
         thinks: ['Frustrated with surge pricing during peak hours', 'Worries about safety when using ride-sharing apps at night', 'Wants to use eco-friendly transportation options when possible', 'Appreciates the convenience of ride-sharing for her daily commute'],
         does: ['Checks multiple ride-sharing apps to compare prices before booking a ride', 'Only uses ride-sharing apps during daylight hours when she feels safer', 'Regularly uses ride-sharing apps for her daily commute to avoid the stress and cost of driving in Chicago traffic.', 'Chooses eco-friendly ride-sharing options when they are available and affordable'],
         feels: ['Annoyed when her ride costs more than she expected due to surge pricing', 'Anxious about her safety when using ride-sharing apps at night', 'Guilty about contributing to environmental pollution when using ride-sharing apps', 'Grateful for the convenience and time-saving benefits of ride-sharing'],
-    }
+    },
+    painPoints: [
+        {
+            id: 1,
+            heading: 'Surge pricing',
+            text: 'Customers may be frustrated when the price of their ride suddenly increases during peak hours or high-demand times. They may feel like they are being taken advantage of, and this could cause them to switch to a different ride-sharing app or choose an alternative mode of transportation.'
+        },
+        {
+            id: 2,
+            heading: 'Safety concerns',
+            text: 'Customers may feel anxious about their safety when using ride-sharing apps, especially at night or in unfamiliar areas. They may worry about getting into the wrong car or being taken advantage of by a driver. This could cause them to hesitate before using the app or switch to a competitor with a stronger safety record.'
+        },
+        {
+            id: 3,
+            heading: 'Lack of eco-friendly options',
+            text: 'Customers who are environmentally conscious may be hesitant to use ride-sharing apps that rely on gasoline-powered vehicles. They may prefer to use electric or hybrid vehicles, but these options may not be available in all markets or may be priced higher than standard ride-sharing options.'
+        },
+    ]
 }
 
 export const rideEaseScreens =[otherOne, otherNine, otherTwo, otherSix, otherFour, otherEight, otherThree, otherSeven, otherFive]

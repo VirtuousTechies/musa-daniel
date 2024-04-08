@@ -140,24 +140,26 @@ export default function RideEaseBody() {
             flex flex-row space-x-2 items-center mt-2' key={item}>
                 <div className='self-center w-[10.45px] bg-[#3676E0] h-[2px] rounded-sm'></div>
                 <p className='text-center md:text-start font-three font-normal tracking-tight 
-                leading-3 text-sm md:text-base mx-5 md:mx-0 md:w-[77%]'>{item}</p>
+                leading-4 md:leading-3 text-sm md:text-base mx-5 md:mx-0 md:w-[77%]'>{item}</p>
             </div>)}
         </div>
         <div className='flex flex-col'>
             <h2 className='font-three font-bold text-2xl mb-3'>Observations</h2>
-            <section className='grid grid-cols-2 gap-12'>
+            <section className='grid grid-cols-1 md:grid-cols-2 gap-12 text-center md:text-start'>
                 {rideEaseData.quantitativeResearch.observations.map((item) => <div className='
                 flex flex-col space-y-5 mt-2' key={item.text}>
                     <p className='font-three font-bold text-2xl text-[#3676E0]'>{item.percent}</p>
                     <p className='text-center md:text-start font-three font-normal tracking-tight 
-                    leading-3 text-sm md:text-base mx-5 md:mx-0 md:w-[80%]'>{item.text}</p>
+                    leading-4 md:leading-3 text-sm md:text-base mx-5 md:mx-0 md:w-[80%]'>{item.text}</p>
                 </div>)}
             </section>
         </div>
     </section>
-    <section className='mt-20 flex flex-col mx-5 md:mx-0 md:w-[90%] xl:w-[80%]'>
+    <section className='mt-20 flex flex-col mx-5 md:mx-0 overflow-y-scroll md:overscroll-y-none
+    w-screen md:w-[90%] xl:w-[80%]'>
         <Heading text={'Empathy Map'} />
-        <div className='flex flex-col mx-5 lg:mx-0 lg:ml-10 mt-10 -space-y-32 lg:-space-y-44 w-full'>
+        <div className='flex flex-col mx-5 lg:mx-0 lg:ml-10 mt-10 -space-y-32 lg:-space-y-44 
+        w-max md:w-full'>
             <div className='flex flex-row -space-x-28 lg:-space-x-10'>
                 <Empathy others={false} data={rideEaseData.empathyMap.says} text={'Says'}  />
                 <figure className='flex flex-row space-x-2 items-center mt-64 lg:mt-52 xl:mt-32'>
@@ -198,7 +200,7 @@ export default function RideEaseBody() {
         xl:-ml-10'>
             <figure className='md:absolute -top-48 left-0 xl:left-8 grid grid-cols-1 gap-10 
             md:gap-y-0 md:grid-cols-3 md:gap-x-10'>
-                {hf.map((src) => <img key={src} src={src} alt="screens" />)}
+                {hf.map((src) => <img key={src} src={src} alt="screens" className='mx-auto' />)}
             </figure>
         </div>
     </section>

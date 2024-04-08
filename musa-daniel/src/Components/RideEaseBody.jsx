@@ -243,6 +243,32 @@ export default function RideEaseBody() {
         </div>
     </section>
     <section className='mt-20 flex flex-col space-y-10 mx-5 md:mx-0 md:w-[90%] xl:w-[80%]'>
+        <Heading text={'User Journey Map'} />
+        <h2>Persona: Sarah</h2>
+        <p><span>Goal:</span> Posuere eget sociis mauris dictum habitasse pharetra leo egestas pretium</p>
+        <div className='flex flex-col space-y-5'>
+            <div className='grid grid-cols-6'>
+                <h2>Actions</h2>
+                {rideEaseData.userJourney.actions.map((item => <p key={item}>{item}</p>))}
+            </div>
+            <div className='grid grid-cols-6 gap-5'>
+                <h2>Task List</h2>
+                {rideEaseData.userJourney.taskList.map((item => <ul key={item} className='flex 
+                flex-col space-y-2 list-decimal'>
+                   {item.map((list =>  <li key={list}>{list}</li>))}
+                </ul>))}
+            </div>
+            <div className='grid grid-cols-6 gap-5'>
+                <h2>Feeling</h2>
+                {rideEaseData.userJourney.feeling.map((item => <img key={item} src={item}/>))}
+            </div>
+            <div className='grid grid-cols-6 gap-5'>
+                <h2>Thoughts</h2>
+                {rideEaseData.userJourney.thoughts.map((item => <p key={item}>{item}</p>))}
+            </div>
+        </div>
+    </section>
+    <section className='mt-20 flex flex-col space-y-10 mx-5 md:mx-0 md:w-[90%] xl:w-[80%]'>
         <Heading text={'Sketches/Low-fidelity Wireframes'} />
         <figure className='flex flex-col space-y-5'>
             <div className='flex flex-row w-[inherit]'>

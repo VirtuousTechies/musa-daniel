@@ -263,7 +263,34 @@ export const rideEaseData = {
             heading: 'Plugins',
             body: ['Unsplash', 'Content reel (Microsoft)']
         },
-    ]
+    ],
+    userPersona: {
+        card: [
+            {
+                title: 'Name',
+                value: 'Allison Hargreeves'
+            },
+            {
+                title: 'Age',
+                value: '35'
+            },
+            {
+                title: 'Occupation',
+                value: 'Marketing Manager'
+            },
+            {
+                title: 'JOB:',
+                value: 'Family Physician'
+            },
+            {
+                title: 'LOCATION',
+                value: 'Calgary, Alberta'
+            },
+        ],
+        bio: 'Sarah is a busy marketing manager who lives and works in an urban area. She relies on ride-sharing apps to get to and from work, as well as for social outings and weekend trips. She values convenience and reliability, and is willing to pay a premium for a ride that is fast and hassle-free. Sarah is environmentally conscious and prefers eco-friendly options when available.',
+        painPoints: ['Surge pricing during peak hours or high-demand times', 'Safety concerns when using ride-sharing apps', 'Limited eco-friendly options available in some markets', 'Poor customer service experiences in the past', 'Technical issues with app functionality such as slow loading times or inaccurate GPS tracking.'],
+        goals: ['Save time getting to and from work', 'Avoid the hassle of finding parking in the city', 'Arrive at social outings and events on time and in style', 'Reduce her carbon footprint by choosing eco-friendly transportation options'],
+    }
 }
 
 export const rideEaseScreens =[otherOne, otherNine, otherTwo, otherSix, otherFour, otherEight, otherThree, otherSeven, otherFive]

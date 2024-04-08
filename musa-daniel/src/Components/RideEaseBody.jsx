@@ -1,6 +1,7 @@
 import React from 'react'
 import { base, cancel, dotDesign, foundation, iconography, pain, rideCursor, rideGoal, rideMainOne, rideMainTwo, rideOne, rideTarget, 
     sarah, 
+    sarah2, 
     sketchFour, 
     sketchOne, 
     sketchThree, 
@@ -160,7 +161,7 @@ export default function RideEaseBody() {
     w-screen md:w-[90%] xl:w-[80%]'>
         <Heading text={'Empathy Map'} />
         <div className='flex flex-col mx-5 lg:mx-0 lg:ml-10 mt-10 -space-y-32 lg:-space-y-44 
-        w-max md:w-full lg:w-auto xl:w-full'>
+        w-max md:w-full lg:w-auto'>
             <div className='flex flex-row -space-x-28 lg:-space-x-10'>
                 <Empathy others={false} data={rideEaseData.empathyMap.says} text={'Says'}  />
                 <figure className='flex flex-row space-x-2 items-center mt-64 lg:mt-52 xl:mt-32'>
@@ -182,20 +183,34 @@ export default function RideEaseBody() {
     </section>
     <section className='mt-20 flex flex-col space-y-8 mx-5 md:mx-0 md:w-[90%] xl:w-[80%]'>
         <Heading text={'Pain Points'} />
-        <div className='flex flex-col space-y-5 md:space-y-0 md:flex-row md:space-x-8 lg:space-x-20'>
+        <div className='flex flex-col space-y-5 md:space-y-0 md:flex-row md:space-x-8 
+        lg:space-x-24'>
             <img src={pain} alt="pain" className='w-[22rem] h-[25rem] self-center 
             lg:self-start lg:h-auto lg:w-auto' />
             <ol className='flex flex-col space-y-5'>
                 {rideEaseData.painPoints.map((list => <li key={list.id} className='flex flex-col
-                space-y-5 font-three text-[#3676E0]'>
+                space-y-5'>
                     <div className='flex flex-row space-x-3 font-semibold text-xl'>
-                        <span>{list.id}.</span>
-                        <span className='text-white'>{list.heading}</span>
+                        <p className='font-three text-[#3676E0] '>{list.id}.</p>
+                        <p className='font-three text-white'>{list.heading}</p>
                     </div>
-                    <span className='font-three font-medium text-base text-white block w-full 
-                    lg:w-[80%]'>{list.text}</span>
+                    <p className='font-three font-normal tracking-tight 
+                    leading-4 text-sm md:text-base text-white w-full 
+                    lg:w-[78%]'>{list.text}</p>
                 </li>))}
             </ol>
+        </div>
+    </section>
+    <section className='mt-20 flex flex-col space-y-8 mx-5 md:mx-0 md:w-[90%] xl:w-[80%]'>
+        <Heading text={'User Persona'} />
+        <div className='grid grid-cols-2'>
+            <div className='flex flex-col space-y-3 bg-[#EBF3FE] px-5 py-10 w-[60%] rounded-md'>
+                <img src={sarah2} alt="sarah" />
+                {rideEaseData.userPersona.card.map((item => <div className='flex flex-row justify-between'>
+                    <p className='text-[#193767]'>{item.title}</p>
+                    <p className='text-black'>{item.value}</p>
+                </div>))}
+            </div>
         </div>
     </section>
     <section className='mt-20 flex flex-col space-y-10 mx-5 md:mx-0 md:w-[90%] xl:w-[80%]'>

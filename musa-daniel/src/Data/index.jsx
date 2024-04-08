@@ -52,6 +52,7 @@ export {default as base} from './images/ride-ease/base.png'
 export {default as foundation} from './images/ride-ease/foundation.png'
 export {default as iconography} from './images/ride-ease/iconography.png'
 export {default as spine} from './images/ride-ease/spine.png'
+export {default as sarah2} from './images/ride-ease/sarah2.png'
 
 export {default as adBlockerMainOne} from './images/ad-blocker/ad-blocker-main-one.png'
 export {default as adBlockerMainTwo} from './images/ad-blocker/ad-blocker-main-two.png'

@@ -241,6 +241,20 @@ export default function RideEaseBody() {
                 </div>
                 <img src={spine} alt="spine" className='self-end' />
             </figure>
+            <div className='flex flex-col space-y-5 py-5 pl-10 w-[inherit] bg-[#EDEBF5] 
+            font-five rounded-md'>
+                <h2 className='text-black font-extrabold text-xl'>Tools</h2>
+                <div className='grid grid-cols-3 w-max'>
+                    {rideEaseData.tools.map((item => <div key={item.heading} className='flex 
+                    flex-col space-y-1 font-medium'>
+                        <p className='text-[#738198] text-lg'>{item.heading}</p>
+                        <ul className='flex flex-col space-y-1'>
+                            {item.body.map((list => <li key={list} className='text-black 
+                           text-sm'>{list}</li>))}
+                        </ul>
+                    </div>))}
+                </div>
+            </div>
         </div>
     </section>
   </section>

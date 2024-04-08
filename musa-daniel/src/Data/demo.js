@@ -249,6 +249,20 @@ export const rideEaseData = {
             heading: 'Lack of eco-friendly options',
             text: 'Customers who are environmentally conscious may be hesitant to use ride-sharing apps that rely on gasoline-powered vehicles. They may prefer to use electric or hybrid vehicles, but these options may not be available in all markets or may be priced higher than standard ride-sharing options.'
         },
+    ],
+    tools: [
+        {
+            heading: 'Design',
+            body: ['Figma', 'Figjam']
+        },
+        {
+            heading: 'Content',
+            body: ['Chat GPT', 'copy.ai']
+        },
+        {
+            heading: 'Plugins',
+            body: ['Unsplash', 'Content reel (Microsoft)']
+        },
     ]
 }
 

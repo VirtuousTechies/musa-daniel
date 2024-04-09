@@ -1,5 +1,5 @@
 import React from 'react'
-import { chat, componentOne, componentThree, componentTwo, favourite, figma, foodAbout, foodMainFive, foodMainFour, foodMainOne, foodMainThree, foodMainTwo, foodProblem, ordering, screenFive, screenFour, screenOne, screenSix, screenThree, screenTwo, special, summary, tracking,} from '../Data'
+import { chat, componentOne, componentThree, componentTwo, favourite, figma, foodAbout, foodMainFive, foodMainFour, foodMainOne, foodMainThree, foodMainTwo, foodProblem, ordering, screenFive, screenFour, screenOne, screenSix, screenThree, screenTwo, special, summary, tracking, vendor,} from '../Data'
 import { FoodHeader } from '.'
 import { foodAppData } from '../Data/demo'
 
@@ -196,6 +196,34 @@ export default function FoodAppBody() {
                     amongst others.</p>
                 </div>
                 <img src={chat} alt="problem" className='md:max-w-[50%]' />
+            </div>
+        </section>
+        <section className='flex flex-col space-y-20 md:items-start w-[90%] mx-5 md:mx-0 
+        md:w-[80%] bg-[#17171717]'>
+            <FoodHeader end={'App screens'}/>
+            <div className='flex flex-col-reverse space-y-reverse space-y-5 lg:space-y-0 lg:flex-row 
+            md:items-center lg:items-start lg:justify-between w-full'>
+                <div className='flex flex-col space-y-5'>
+                    <h2 className='bg-gradient-to-l font-four text-3xl md:text-4xl font-extrabold 
+                    text-transparent bg-clip-text to-[#F9881F] from-[#ED474A] md:text-center 
+                    lg:text-start'>Vendor mode</h2>
+                    <p className='font-four font-extralight text-white text-lg
+                    lg:w-[29rem]'>This was built for the special order feature.
+                    Vendors may register with Foodio, complete their KYC and have the vendor mode 
+                    available to them. This would allow them accept special orders from users and 
+                    make the deliveries for it. This would be an especially attractive market for 
+                    food vendors who are usually left out of the food ordering ecosystem and rely only 
+                    on orders gotten from their social media pages.</p>
+                    <p className='font-four font-extralight text-white text-lg
+                    lg:w-[29rem]'>To register as a vendor, the vendor needs to be confirmed as someone 
+                    who actually sells food and has proof of it i.e social media handles, 
+                    business registration etc.</p>
+                    <p className='font-four font-extralight text-white text-lg
+                    lg:w-[29rem]'>To <span className='text-white font-bold'> handle payments, </span> 
+                    we added a feature for vendors to add a payment 
+                    collector like paystack, flutterwave or payoneer for them to get paid.</p>
+                </div>
+                <img src={vendor} alt="problem" className='md:max-w-[50%]' />
             </div>
         </section>
         <section className='flex flex-col space-y-20 md:items-start w-[90%] mx-5 md:mx-0 

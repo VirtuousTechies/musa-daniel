@@ -1,5 +1,5 @@
 import React from 'react'
-import { figma, foodMainFive, foodMainFour, foodMainOne, foodMainThree, foodMainTwo} from '../Data'
+import { figma, foodMainFive, foodMainFour, foodMainOne, foodMainThree, foodMainTwo, screenFive, screenFour, screenOne, screenSix, screenThree, screenTwo,} from '../Data'
 import { DesignProcess, FoodHeader } from '.'
 
 export default function FoodAppBody() {
@@ -56,9 +56,19 @@ export default function FoodAppBody() {
         </figure>
         </section>
         <DesignProcess />
-        <section className='flex flex-col space-y-20 md:justify-center md:items-center w-full 
-      bg-[#17171717]'>
+        <section className='flex flex-col space-y-20 md:items-start w-[90%] 
+        md:w-[80%] bg-[#17171717]'>
             <FoodHeader end={'App screens'} />
+            <h2 className='bg-gradient-to-l font-four text-3xl md:text-4xl font-extrabold 
+            text-transparent bg-clip-text to-[#F9881F] from-[#ED474A]'>All screens</h2>
+            <figure className='flex flex-col space-y-5'>
+                <img src={screenOne} alt="screen-one" />
+                <img src={screenTwo} alt="screen-two" />
+                <img src={screenThree} alt="screen-three" />
+                <img src={screenFour} alt="screen-four" />
+                <img src={screenFive} alt="screen-five" />
+                <img src={screenSix} alt="screen-six" />
+            </figure>
         </section>
     </section>
   )

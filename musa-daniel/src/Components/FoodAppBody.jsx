@@ -1,5 +1,5 @@
 import React from 'react'
-import { figma, foodMainFive, foodMainFour, foodMainOne, foodMainThree, foodMainTwo, screenFive, screenFour, screenOne, screenSix, screenThree, screenTwo,} from '../Data'
+import { componentOne, componentThree, componentTwo, figma, foodMainFive, foodMainFour, foodMainOne, foodMainThree, foodMainTwo, screenFive, screenFour, screenOne, screenSix, screenThree, screenTwo,} from '../Data'
 import { DesignProcess, FoodHeader } from '.'
 
 export default function FoodAppBody() {
@@ -68,6 +68,17 @@ export default function FoodAppBody() {
                 <img src={screenFour} alt="screen-four" />
                 <img src={screenFive} alt="screen-five" />
                 <img src={screenSix} alt="screen-six" />
+            </figure>
+        </section>
+        <div className='bg-[#98A2B3] w-[90%] md:w-[80%] h-[2px]'></div>
+        <section className='flex flex-col space-y-20 md:items-start w-[90%] mx-5 md:mx-0 
+        md:w-[80%] bg-[#17171717]'>
+            <h2 className='bg-gradient-to-l font-four text-3xl md:text-4xl font-extrabold 
+            text-transparent bg-clip-text to-[#F9881F] from-[#ED474A]'>Components</h2>
+            <figure className='flex flex-col space-y-12'>
+                <img src={componentOne} alt="component-one" />
+                <img src={componentTwo} alt="component-two" />
+                <img src={componentThree} alt="component-three" />
             </figure>
         </section>
         <section className='flex flex-col w-full bg-[#03071E] px-5 py-10'>

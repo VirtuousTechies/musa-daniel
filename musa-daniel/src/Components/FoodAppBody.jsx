@@ -56,7 +56,7 @@ export default function FoodAppBody() {
         </figure>
         </section>
         <DesignProcess />
-        <section className='flex flex-col space-y-20 md:items-start w-[90%] 
+        <section className='flex flex-col space-y-20 md:items-start w-[90%] mx-5 md:mx-0 
         md:w-[80%] bg-[#17171717]'>
             <FoodHeader end={'App screens'} />
             <h2 className='bg-gradient-to-l font-four text-3xl md:text-4xl font-extrabold 

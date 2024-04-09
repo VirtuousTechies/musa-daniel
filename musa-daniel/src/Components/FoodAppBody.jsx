@@ -87,10 +87,11 @@ export default function FoodAppBody() {
             <FoodHeader />
             <h2 className='bg-gradient-to-l font-four text-3xl md:text-4xl font-extrabold 
             text-transparent bg-clip-text to-[#F9881F] from-[#ED474A]'>Summary</h2>
-            <div className='flex flex-row justify-between w-[inherit]'>
-               <div className='flex flex-col space-y-10'>
+            <div className='flex flex-col-reverse space-y-reverse space-y-5 lg:space-y-0 items-center 
+            lg:items-start lg:flex-row lg:justify-between lg:w-[inherit]'>
+               <div className='flex flex-col space-y-10 self-end lg:self-auto'>
                 {foodAppData.summary.map((text => <p key={text} className='font-extralight font-four 
-                text-lg w-[30rem]'>{text}</p>))}
+                text-lg lg:w-[18rem] xl:w-[30rem]'>{text}</p>))}
                </div>
                 <img src={summary} alt="summary" className='self-end' />
             </div>

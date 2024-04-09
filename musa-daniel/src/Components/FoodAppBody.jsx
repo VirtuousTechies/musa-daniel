@@ -76,20 +76,23 @@ export default function FoodAppBody() {
         <section className='flex flex-col space-y-20 md:items-start w-[90%] mx-5 md:mx-0 
         md:w-[80%] bg-[#17171717]'>
             <FoodHeader />
-            <div className='flex flex-row justify-between w-full'>
+            <div className='flex flex-col-reverse space-y-reverse space-y-5 md:space-y-0 md:flex-row 
+            md:justify-between w-full'>
                 <div className='flex flex-col space-y-5'>
                     <h2 className='bg-gradient-to-l font-four text-3xl md:text-4xl font-extrabold 
                     text-transparent bg-clip-text to-[#F9881F] from-[#ED474A]'>Problem statement</h2>
                     <p className='font-four font-bold text-white 
-                    text-base md:w-[30rem]'>Understanding the problem:</p>
-                    <p className='font-four font-extralight text-white text-base md:w-[30rem]'>
+                    text-base'>Understanding the problem:</p>
+                    <p className='font-four font-extralight text-white text-base md:w-[20rem] 
+                    lg:w-[24.5rem]'>
                     There are plenty of food ordering apps on the market, but what makes 
                     <span className='text-white font-bold'> ChowXpress </span> stand out is 
                     the added feature of users being able to place special orders for food they 
                     see probably online but cant eat because of geographical challenges, and also 
                     interact with the vendors selling the food in real time and make enquiries.</p>
                 </div>
-                <img src={foodProblem} alt="problem" />
+                <img src={foodProblem} alt="problem" className='md:max-w-[40%] lg:max-w-[50%] 
+                xl:max-w-full' />
             </div>
         </section>
         <section className='flex flex-col space-y-20 md:items-start w-[90%] mx-5 md:mx-0 

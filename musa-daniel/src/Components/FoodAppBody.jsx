@@ -1,5 +1,5 @@
 import React from 'react'
-import { componentOne, componentThree, componentTwo, figma, foodAbout, foodMainFive, foodMainFour, foodMainOne, foodMainThree, foodMainTwo, screenFive, screenFour, screenOne, screenSix, screenThree, screenTwo, summary,} from '../Data'
+import { componentOne, componentThree, componentTwo, figma, foodAbout, foodMainFive, foodMainFour, foodMainOne, foodMainThree, foodMainTwo, foodProblem, screenFive, screenFour, screenOne, screenSix, screenThree, screenTwo, summary,} from '../Data'
 import { FoodHeader } from '.'
 import { foodAppData } from '../Data/demo'
 
@@ -72,6 +72,25 @@ export default function FoodAppBody() {
                     <img src={foodAbout} alt="about" className='lg:-mt-32' />
                 </section>
             </section>
+        </section>
+        <section className='flex flex-col space-y-20 md:items-start w-[90%] mx-5 md:mx-0 
+        md:w-[80%] bg-[#17171717]'>
+            <FoodHeader />
+            <div className='flex flex-row justify-between w-full'>
+                <div className='flex flex-col space-y-5'>
+                    <h2 className='bg-gradient-to-l font-four text-3xl md:text-4xl font-extrabold 
+                    text-transparent bg-clip-text to-[#F9881F] from-[#ED474A]'>Problem statement</h2>
+                    <p className='font-four font-bold text-white 
+                    text-base md:w-[30rem]'>Understanding the problem:</p>
+                    <p className='font-four font-extralight text-white text-base md:w-[30rem]'>
+                    There are plenty of food ordering apps on the market, but what makes 
+                    <span className='text-white font-bold'> ChowXpress </span> stand out is 
+                    the added feature of users being able to place special orders for food they 
+                    see probably online but cant eat because of geographical challenges, and also 
+                    interact with the vendors selling the food in real time and make enquiries.</p>
+                </div>
+                <img src={foodProblem} alt="problem" />
+            </div>
         </section>
         <section className='flex flex-col space-y-20 md:items-start w-[90%] mx-5 md:mx-0 
         md:w-[80%] bg-[#17171717]'>

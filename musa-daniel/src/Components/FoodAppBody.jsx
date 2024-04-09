@@ -1,5 +1,5 @@
 import React from 'react'
-import { componentOne, componentThree, componentTwo, favourite, figma, foodAbout, foodMainFive, foodMainFour, foodMainOne, foodMainThree, foodMainTwo, foodProblem, ordering, screenFive, screenFour, screenOne, screenSix, screenThree, screenTwo, summary, tracking,} from '../Data'
+import { componentOne, componentThree, componentTwo, favourite, figma, foodAbout, foodMainFive, foodMainFour, foodMainOne, foodMainThree, foodMainTwo, foodProblem, ordering, screenFive, screenFour, screenOne, screenSix, screenThree, screenTwo, special, summary, tracking,} from '../Data'
 import { FoodHeader } from '.'
 import { foodAppData } from '../Data/demo'
 
@@ -122,8 +122,7 @@ export default function FoodAppBody() {
             md:justify-between w-full'>
                 <div className='flex flex-col space-y-5'>
                     <h2 className='bg-gradient-to-l font-four text-3xl md:text-4xl font-extrabold 
-                    text-transparent bg-clip-text to-[#F9881F] from-[#ED474A] text-center 
-                    md:text-start'>Order tracking</h2>
+                    text-transparent bg-clip-text to-[#F9881F] from-[#ED474A]'>Order tracking</h2>
                     <p className='font-four font-extralight text-white text-lg md:w-[20rem] 
                     lg:w-[29rem]'>We also added a feature for users to track their orders via an embeded 
                     google manp i-frame and be able to place a call to the courier personnel . This is 
@@ -140,8 +139,7 @@ export default function FoodAppBody() {
             md:justify-between w-full'>
                 <div className='flex flex-col space-y-5'>
                     <h2 className='bg-gradient-to-l font-four text-3xl md:text-4xl font-extrabold 
-                    text-transparent bg-clip-text to-[#F9881F] from-[#ED474A] text-center 
-                    md:text-start'>Add to favourites</h2>
+                    text-transparent bg-clip-text to-[#F9881F] from-[#ED474A]'>Add to favourites</h2>
                     <p className='font-four font-extralight text-white text-lg md:w-[20rem] 
                     lg:w-[29rem]'>There are times users just love a particular experience with food 
                     they ordered, that they just want more, or perhaps want it to be their new fav 
@@ -152,6 +150,31 @@ export default function FoodAppBody() {
                     that can be saved as favourites to just 12.</p>
                 </div>
                 <img src={favourite} alt="problem" className='md:max-w-[50%]' />
+            </div>
+        </section>
+        <section className='flex flex-col space-y-20 md:items-start w-[90%] mx-5 md:mx-0 
+        md:w-[80%] bg-[#17171717]'>
+            <FoodHeader end={'App screens'}/>
+            <div className='flex flex-col-reverse space-y-reverse space-y-5 md:space-y-0 md:flex-row 
+            md:justify-between w-full'>
+                <div className='flex flex-col space-y-5'>
+                    <h2 className='bg-gradient-to-l font-four text-3xl md:text-4xl font-extrabold 
+                    text-transparent bg-clip-text to-[#F9881F] from-[#ED474A]'>Special Order</h2>
+                    <p className='font-four font-extralight text-white text-lg md:w-[20rem] 
+                    lg:w-[29rem]'>We acknolwedged the one of the  inefficiencies and gaps of many food 
+                    delivery services whereby the catalogue, albeit plentiful, may just not be enough to 
+                    satisfy some cravings. <br />
+                    For this, we added the <span className='text-white font-bold'> Special Order </span> 
+                    feature, where users can post a special order 
+                    craving they have, all they need to do is give the order a name, give a brief 
+                    description or even add a picture and post it, when someone can make the dish, 
+                    they get notified and they finalise it all in the chat system.</p>
+                    <p className='font-four font-bold text-[#ED474A] text-lg md:w-[20rem] 
+                    lg:w-[29.8rem] italic'>This order will be attended to by registered vendors on the app 
+                    who can take special orders as a side gig, we built something for them too so, 
+                    follow for more.</p>
+                </div>
+                <img src={special} alt="problem" className='md:max-w-[50%]' />
             </div>
         </section>
         <section className='flex flex-col space-y-20 md:items-start w-[90%] mx-5 md:mx-0 

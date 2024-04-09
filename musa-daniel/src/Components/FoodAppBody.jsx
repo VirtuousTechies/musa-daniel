@@ -1,5 +1,5 @@
 import React from 'react'
-import { componentOne, componentThree, componentTwo, favourite, figma, foodAbout, foodMainFive, foodMainFour, foodMainOne, foodMainThree, foodMainTwo, foodProblem, ordering, screenFive, screenFour, screenOne, screenSix, screenThree, screenTwo, special, summary, tracking,} from '../Data'
+import { chat, componentOne, componentThree, componentTwo, favourite, figma, foodAbout, foodMainFive, foodMainFour, foodMainOne, foodMainThree, foodMainTwo, foodProblem, ordering, screenFive, screenFour, screenOne, screenSix, screenThree, screenTwo, special, summary, tracking,} from '../Data'
 import { FoodHeader } from '.'
 import { foodAppData } from '../Data/demo'
 
@@ -178,6 +178,24 @@ export default function FoodAppBody() {
                     follow for more.</p>
                 </div>
                 <img src={special} alt="problem" className='md:max-w-[50%]' />
+            </div>
+        </section>
+        <section className='flex flex-col space-y-20 md:items-start w-[90%] mx-5 md:mx-0 
+        md:w-[80%] bg-[#17171717]'>
+            <FoodHeader end={'App screens'}/>
+            <div className='flex flex-col-reverse space-y-reverse space-y-5 lg:space-y-0 lg:flex-row 
+            md:items-center lg:items-start lg:justify-between w-full'>
+                <div className='flex flex-col space-y-5'>
+                    <h2 className='bg-gradient-to-l font-four text-3xl md:text-4xl font-extrabold 
+                    text-transparent bg-clip-text to-[#F9881F] from-[#ED474A] md:text-center 
+                    lg:text-start'>Chat system</h2>
+                    <p className='font-four font-extralight text-white text-lg
+                    lg:w-[29rem]'>We also built in a chat system for users to be able to interact 
+                    with vendors who accepted their special orders and also perhaps conduct other 
+                    businesses like hiring for events if they like the vendor’s services, 
+                    amongst others.</p>
+                </div>
+                <img src={chat} alt="problem" className='md:max-w-[50%]' />
             </div>
         </section>
         <section className='flex flex-col space-y-20 md:items-start w-[90%] mx-5 md:mx-0 

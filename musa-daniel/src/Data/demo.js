@@ -300,6 +300,20 @@ export const rideEaseData = {
 }
 
 export const foodAppData = {
+    about: [
+        {
+            heading: 'About the product',
+            text: 'ChowXpress is an food ordering app for food lovers with a wide variety of catalogue offerings with an especial service of African cuisines, it gives users the option to place special orders to a suite of vendors and vendors who take the orders users place, and interact with each other in real time.'
+        },
+        {
+            heading: 'My role',
+            text: 'Lead designer of the product from ideation and research to the prototype and testing phase.'
+        },
+        {
+            heading: 'Project goal',
+            text: 'Design an app for users to order food and monitor delivery in real time, allow vendors to take special orders and also interact with the users.'
+        }
+    ],
     summary: ["This project saw me put to test alot of the skills I’ve learnt for product design and development, from market surveys to building wireframes (Low-fi & Hi-fi),  prototyping the concept and iterating on the designs. This was very time-consuming and demanding and really pushed me to alot of my current limits. ", "I learnt alot during this project, such as needing to work on perfecting my UX design process, trying out new UI design skills, definitely working on being a better user interviewer etc, but, I will continue to improve on my skills, still lots to learn, and I know my next project, which i’m starting immediately, would see me test new waters and break new grounds."]
 }
 

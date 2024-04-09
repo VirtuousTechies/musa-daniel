@@ -1,6 +1,6 @@
 import React from 'react'
 import { figma, foodMainFive, foodMainFour, foodMainOne, foodMainThree, foodMainTwo} from '../Data'
-import { DesignProcess } from '.'
+import { DesignProcess, FoodHeader } from '.'
 
 export default function FoodAppBody() {
   return (
@@ -55,11 +55,11 @@ export default function FoodAppBody() {
             lg:w-[250px] xl:w-[300px] m-0'/>
         </figure>
         </section>
-        <section></section>
-        <section></section>
         <DesignProcess />
-        <section></section>
-        <section></section>
+        <section className='flex flex-col space-y-20 md:justify-center md:items-center w-full 
+      bg-[#17171717]'>
+            <FoodHeader end={'App screens'} />
+        </section>
     </section>
   )
 }

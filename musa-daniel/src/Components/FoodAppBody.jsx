@@ -1,5 +1,5 @@
 import React from 'react'
-import { componentOne, componentThree, componentTwo, figma, foodAbout, foodMainFive, foodMainFour, foodMainOne, foodMainThree, foodMainTwo, foodProblem, ordering, screenFive, screenFour, screenOne, screenSix, screenThree, screenTwo, summary, tracking,} from '../Data'
+import { componentOne, componentThree, componentTwo, favourite, figma, foodAbout, foodMainFive, foodMainFour, foodMainOne, foodMainThree, foodMainTwo, foodProblem, ordering, screenFive, screenFour, screenOne, screenSix, screenThree, screenTwo, summary, tracking,} from '../Data'
 import { FoodHeader } from '.'
 import { foodAppData } from '../Data/demo'
 
@@ -131,6 +131,27 @@ export default function FoodAppBody() {
                     their orders every step of the way.</p>
                 </div>
                 <img src={tracking} alt="problem" className='md:max-w-[50%]' />
+            </div>
+        </section>
+        <section className='flex flex-col space-y-20 md:items-start w-[90%] mx-5 md:mx-0 
+        md:w-[80%] bg-[#17171717]'>
+            <FoodHeader end={'App screens'}/>
+            <div className='flex flex-col-reverse space-y-reverse space-y-5 md:space-y-0 md:flex-row 
+            md:justify-between w-full'>
+                <div className='flex flex-col space-y-5'>
+                    <h2 className='bg-gradient-to-l font-four text-3xl md:text-4xl font-extrabold 
+                    text-transparent bg-clip-text to-[#F9881F] from-[#ED474A] text-center 
+                    md:text-start'>Add to favourites</h2>
+                    <p className='font-four font-extralight text-white text-lg md:w-[20rem] 
+                    lg:w-[29rem]'>There are times users just love a particular experience with food 
+                    they ordered, that they just want more, or perhaps want it to be their new fav 
+                    dish for a particular occassion. <br />
+                    For this, I included a favourites feature, where users can save some dishes as 
+                    favourites, to limit the number of favourites a person can have though, 
+                    because you can only have so much favourites, we limited the number of dishes 
+                    that can be saved as favourites to just 12.</p>
+                </div>
+                <img src={favourite} alt="problem" className='md:max-w-[50%]' />
             </div>
         </section>
         <section className='flex flex-col space-y-20 md:items-start w-[90%] mx-5 md:mx-0 

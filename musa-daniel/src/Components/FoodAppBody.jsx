@@ -1,5 +1,5 @@
 import React from 'react'
-import { componentOne, componentThree, componentTwo, figma, foodAbout, foodMainFive, foodMainFour, foodMainOne, foodMainThree, foodMainTwo, foodProblem, screenFive, screenFour, screenOne, screenSix, screenThree, screenTwo, summary,} from '../Data'
+import { componentOne, componentThree, componentTwo, figma, foodAbout, foodMainFive, foodMainFour, foodMainOne, foodMainThree, foodMainTwo, foodProblem, ordering, screenFive, screenFour, screenOne, screenSix, screenThree, screenTwo, summary,} from '../Data'
 import { FoodHeader } from '.'
 import { foodAppData } from '../Data/demo'
 
@@ -93,6 +93,26 @@ export default function FoodAppBody() {
                 </div>
                 <img src={foodProblem} alt="problem" className='md:max-w-[40%] lg:max-w-[50%] 
                 xl:max-w-full' />
+            </div>
+        </section>
+        <section className='flex flex-col space-y-20 md:items-start w-[90%] mx-5 md:mx-0 
+        md:w-[80%] bg-[#17171717]'>
+            <FoodHeader end={'App screens'}/>
+            <div className='flex flex-col-reverse space-y-reverse space-y-5 md:space-y-0 md:flex-row 
+            md:justify-between w-full'>
+                <div className='flex flex-col space-y-5'>
+                    <h2 className='bg-gradient-to-l font-four text-3xl md:text-4xl font-extrabold 
+                    text-transparent bg-clip-text to-[#F9881F] from-[#ED474A] text-center 
+                    xl:text-start'>Main page & ordering system</h2>
+                    <p className='font-four font-extralight text-white text-lg md:w-[20rem] 
+                    lg:w-[29rem]'><span className='text-white font-bold'> ChowXpress </span> has a 
+                    simple ordering system implemented into its feature, all users need to do is 
+                    just browse to the food they would like, or search for it, click on the food to 
+                    expand, input how many portions of the food they’d like and place the order. 
+                    The system automatically places the order for them and they just wait for it 
+                    to arrive.</p>
+                </div>
+                <img src={ordering} alt="problem" className='md:max-w-[50%]' />
             </div>
         </section>
         <section className='flex flex-col space-y-20 md:items-start w-[90%] mx-5 md:mx-0 

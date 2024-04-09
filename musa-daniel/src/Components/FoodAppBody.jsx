@@ -59,9 +59,9 @@ export default function FoodAppBody() {
             </section>
        </section>
         <section className='flex md:justify-center md:items-center w-full bg-[#121212] py-20'>
-            <section className='flex flex-col space-y-20 md:items-start w-[90%] md:w-[80%]'>
+            <section className='flex flex-col space-y-20 pl-5 md:pl-0 md:items-start w-[90%] md:w-[80%]'>
                 <FoodHeader />
-                <section className='grid grid-cols-2 gap-32 w-full mx-5 md:mx-0'>
+                <section className='grid grid-cols-1 lg:grid-cols-2 gap-32 w-full mx-5 md:mx-0'>
                     {foodAppData.about.map((item => <div key={item.heading} className='flex flex-col 
                     space-y-3 justify-start items-start'>
                         <h2 className='bg-gradient-to-l font-four text-3xl md:text-4xl font-extrabold 
@@ -69,7 +69,7 @@ export default function FoodAppBody() {
                         <p className='font-four font-extralight text-white text-base
                         md:w-[24rem]'>{item.text}</p>
                     </div>))}
-                    <img src={foodAbout} alt="about" className='-mt-32' />
+                    <img src={foodAbout} alt="about" className='lg:-mt-32' />
                 </section>
             </section>
         </section>

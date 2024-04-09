@@ -1,6 +1,7 @@
 import React from 'react'
-import { componentOne, componentThree, componentTwo, figma, foodMainFive, foodMainFour, foodMainOne, foodMainThree, foodMainTwo, screenFive, screenFour, screenOne, screenSix, screenThree, screenTwo,} from '../Data'
+import { componentOne, componentThree, componentTwo, figma, foodMainFive, foodMainFour, foodMainOne, foodMainThree, foodMainTwo, screenFive, screenFour, screenOne, screenSix, screenThree, screenTwo, summary,} from '../Data'
 import { DesignProcess, FoodHeader } from '.'
+import { foodAppData } from '../Data/demo'
 
 export default function FoodAppBody() {
   return (
@@ -80,6 +81,20 @@ export default function FoodAppBody() {
                 <img src={componentTwo} alt="component-two" />
                 <img src={componentThree} alt="component-three" />
             </figure>
+        </section>
+        <section className='flex flex-col space-y-20 md:items-start w-[90%] mx-5 md:mx-0 
+        md:w-[80%] bg-[#17171717]'>
+            <FoodHeader />
+            <h2 className='bg-gradient-to-l font-four text-3xl md:text-4xl font-extrabold 
+            text-transparent bg-clip-text to-[#F9881F] from-[#ED474A]'>Summary</h2>
+            <div className='flex flex-row justify-between w-[inherit]'>
+               <div className='flex flex-col space-y-10'>
+                {foodAppData.summary.map((text => <p key={text} className='font-extralight font-four 
+                text-lg w-[30rem]'>{text}</p>))}
+               </div>
+                <img src={summary} alt="summary" className='self-end' />
+            </div>
+            
         </section>
         <section className='flex flex-col w-full bg-[#03071E] px-5 py-10'>
             <FoodHeader />

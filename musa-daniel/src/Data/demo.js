@@ -299,5 +299,9 @@ export const rideEaseData = {
     }
 }
 
+export const foodAppData = {
+    summary: ["This project saw me put to test alot of the skills I’ve learnt for product design and development, from market surveys to building wireframes (Low-fi & Hi-fi),  prototyping the concept and iterating on the designs. This was very time-consuming and demanding and really pushed me to alot of my current limits. ", "I learnt alot during this project, such as needing to work on perfecting my UX design process, trying out new UI design skills, definitely working on being a better user interviewer etc, but, I will continue to improve on my skills, still lots to learn, and I know my next project, which i’m starting immediately, would see me test new waters and break new grounds."]
+}
+
 export const rideEaseScreens =[otherOne, otherNine, otherTwo, otherSix, otherFour, otherEight, otherThree, otherSeven, otherFive]
 export const hf =[hfOne, otherEight, hfTwo]

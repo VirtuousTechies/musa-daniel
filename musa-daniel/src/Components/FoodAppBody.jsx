@@ -70,6 +70,19 @@ export default function FoodAppBody() {
                 <img src={screenSix} alt="screen-six" />
             </figure>
         </section>
+        <section className='flex flex-col w-full bg-[#03071E] px-5 py-10'>
+            <FoodHeader />
+           <div className='self-center flex flex-col w-full justify-center items-center 
+           h-[20rem] space-y-5'>
+                <h2 className='bg-gradient-to-l font-four text-3xl md:text-4xl font-extrabold 
+                text-transparent bg-clip-text to-[#F9881F] from-[#ED474A]'>Thank you for
+                reading</h2>
+                <p className='text-center font-four font-extralight text-[#98A2B3] 
+                text-lg md:w-[30rem]'>I trully appreciate you checking out my study, 
+                I’d love to hear your feedback.</p>
+           </div>
+        </section>
     </section>
   )
 }
+ 

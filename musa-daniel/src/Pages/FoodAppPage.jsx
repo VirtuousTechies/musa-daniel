@@ -1,6 +1,5 @@
 import React from 'react'
-import { FoodAppBody, NavBar } from '../Components'
-import Footer from '../Components/Footer'
+import { BottomBar, FoodAppBody, Footer, NavBar } from '../Components'
 
 export default function FoodAppPage() {
   return (
@@ -8,6 +7,7 @@ export default function FoodAppPage() {
       <NavBar />
       <FoodAppBody />
       <Footer />
+      <BottomBar />
     </section>
   )
 }

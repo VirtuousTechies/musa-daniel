@@ -1,6 +1,5 @@
 import React from 'react'
-import { AdBlockerBody, NavBar } from '../Components'
-import Footer from '../Components/Footer'
+import { AdBlockerBody, BottomBar, Footer, NavBar } from '../Components'
 
 export default function AdBlockerPage() {
   return (
@@ -8,6 +7,7 @@ export default function AdBlockerPage() {
       <NavBar />
       <AdBlockerBody />
       <Footer />
+      <BottomBar />
     </section>
   )
 }

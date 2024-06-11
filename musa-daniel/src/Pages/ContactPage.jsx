@@ -1,6 +1,5 @@
 import React from 'react'
-import { GetInTouch, NavBar } from '../Components'
-import Footer from '../Components/Footer'
+import { BottomBar, Footer, GetInTouch, NavBar } from '../Components'
 
 export default function ContactPage() {
   return (
@@ -8,6 +7,7 @@ export default function ContactPage() {
       <NavBar />
       <GetInTouch />
       <Footer />
+      <BottomBar />
     </section>
   )
 }

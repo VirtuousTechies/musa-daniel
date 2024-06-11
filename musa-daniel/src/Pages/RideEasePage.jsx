@@ -1,6 +1,5 @@
 import React from 'react'
-import { NavBar, RideEaseBody } from '../Components'
-import Footer from '../Components/Footer'
+import { BottomBar, Footer, NavBar, RideEaseBody } from '../Components'
 
 export default function RideEasePage() {
   return (
@@ -8,6 +7,7 @@ export default function RideEasePage() {
       <NavBar />
       <RideEaseBody />
       <Footer />
+      <BottomBar />
     </section>
   )
 }

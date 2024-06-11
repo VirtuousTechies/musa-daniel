@@ -9,7 +9,8 @@
   transition: .5s;
 }
 
-input, ul>li  {
+input,
+ul>li {
   font-family: 'DM Sans', sans-serif;
 }
 
@@ -26,4 +27,21 @@ body {
   max-width: none;
   margin: 0;
   padding: 0;
+}
+
+.bbar {
+  transition: .5s ease;
+  animation: slide 2s;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateY(-40%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0%);
+    opacity: 100%;
+  }
 }

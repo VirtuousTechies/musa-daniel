@@ -1,10 +1,7 @@
 import React from 'react'
-import { About, Hero, NavBar } from '../Components'
-import Footer from '../Components/Footer'
-import { useNavigate } from 'react-router-dom'
+import { About, BottomBar, Footer, Hero, NavBar } from '../Components'
 
 export default function AboutPage() {
-  const navigate = useNavigate()
   React.useEffect(() => {
     window.scrollTo({top:700,left:0, behavior: "smooth"})
   })
@@ -14,6 +11,7 @@ export default function AboutPage() {
       <Hero />
       <About/>
       <Footer />
+      <BottomBar />
     </section>
   )
 }

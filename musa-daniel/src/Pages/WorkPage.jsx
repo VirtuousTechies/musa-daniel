@@ -1,6 +1,5 @@
 import React from 'react'
-import { NavBar, Works } from '../Components'
-import Footer from '../Components/Footer'
+import { BottomBar, Footer, NavBar, Works } from '../Components'
 
 export default function WorkPage() {
   return (
@@ -8,6 +7,7 @@ export default function WorkPage() {
       <NavBar />
       <Works />
       <Footer />
+      <BottomBar />
     </section>
   )
 }

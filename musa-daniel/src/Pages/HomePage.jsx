@@ -1,10 +1,9 @@
 import React from 'react'
-import { About, FeaturedWork, GetInTouch, Hero, Info, MySkills, NavBar, WhatIDo } from '../Components'
-import Footer from '../Components/Footer'
+import { About, BottomBar, FeaturedWork, Footer, GetInTouch, Hero, Info, MySkills, NavBar, WhatIDo } from '../Components'
 
 export default function HomePage() {
   return (
-    <section className='flex flex-col space-y-24 pb-10'>
+    <section className='flex flex-col space-y-24 pb-10 relative'>
       <NavBar />
       <Hero />
       <About/>
@@ -14,6 +13,7 @@ export default function HomePage() {
       <MySkills />
       <GetInTouch />
       <Footer />
+      <BottomBar />
     </section>
   )
 }

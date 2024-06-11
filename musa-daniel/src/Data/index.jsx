@@ -13,6 +13,7 @@ export {default as airMaxCover} from './images/main/air-max-cover.png'
 export {default as adBlockerCover} from './images/main/ad-blocker-cover.png'
 export {default as foodAppCover} from './images/main/food-app-cover.png'
 export {default as right} from './images/main/right-icon.png'
+export {default as up} from './images/main/up.png'
 
 export {default as understand} from './images/main/understand.png'
 export {default as define} from './images/main/define.png'

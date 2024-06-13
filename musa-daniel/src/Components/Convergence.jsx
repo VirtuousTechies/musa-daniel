@@ -11,12 +11,14 @@ export default function Convergence({data}) {
             <div className='flex flex-col self-start space-y-5 w-full'>
                 <h2 className='bg-gradient-to-l font-four text-3xl md:text-4xl font-extrabold 
                 text-transparent bg-clip-text to-[#F9881F] from-[#ED474A] mb-5'>Convergence</h2>
-                <div className='flex flex-row justify-between w-full items-center'>
+                <div className='flex flex-col space-y-5 md:space-y-10 lg:flex-row lg:justify-between 
+                xl:w-full md:items-center mx-5 md:mx-0'>
                     <div className='flex flex-col space-y-5'>
                         <div className='flex flex-col space-y-3'>
                             <p className='font-four font-bold text-white 
                             text-base mb-2'>User personas</p>
-                            <figure className='flex flex-row space-x-8 items-center'>
+                            <figure className='flex flex-col space-y-5 md:space-y-0 md:flex-row 
+                            md:space-x-8 items-center'>
                                 <img src={data.img} alt={data.name} className='w-[149px] 
                                 rounded-md' />
                                 <div className='flex flex-col space-y-3'>
@@ -34,7 +36,7 @@ export default function Convergence({data}) {
                                     </p>
                                 </div>
                             </figure>
-                            <p className='font-four font-bold text-white w-[23.4rem] tracking-[0.012rem]
+                            <p className='font-four font-bold text-white md:w-[23.4rem] tracking-[0.012rem]
                             text-base mb-2 leading-[1.7rem] italic'>{data.des}</p>
                         </div>
                         <div className='flex flex-col p-5 bg-[#03071E] rounded-md shadow-md'>
@@ -50,14 +52,14 @@ export default function Convergence({data}) {
                             <p className='font-four font-bold text-[#32D583]
                             text-2xl mb-2'>User’s Goals</p>
                             <ul className='font-four font-normal text-lg text-white list-disc pl-10'>
-                                {data.goals.map((list => <li key={list} className='w-[20rem]'>{list}</li>))}
+                                {data.goals.map((list => <li key={list} className='md:w-[20rem]'>{list}</li>))}
                             </ul>
                         </div>
                         <div className='flex flex-col space-y-3'>
                             <p className='font-four font-bold text-[#ED474A]
                             text-2xl mb-2'>User’s Frustrations</p>
                             <ul className='font-four font-normal text-lg text-white list-disc pl-10'>
-                                {data.frustration.map((list => <li key={list} className='w-[22.5rem]'>{list}</li>))}
+                                {data.frustration.map((list => <li key={list} className='md:w-[22.5rem]'>{list}</li>))}
                             </ul>
                         </div>
                     </div>

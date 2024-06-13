@@ -70,7 +70,7 @@ export default function RideEaseBody() {
     mx-5 md:mx-0 mt-20 md:w-[90%] xl:w-[80%]'>
         <img src={rideGoal} alt="phone-image" className='self-center w-[60%] 
         md:w-[12rem] lg:w-[20rem]' />
-        <div className='flex flex-col space-y-5 w-[50%]'>
+        <div className='flex flex-col space-y-5 md:w-[50%]'>
           <div className='flex flex-col space-y-2'>
             <Heading text={'Product Statement'}/>
             <p className='text-center md:text-start font-three font-normal tracking-tight 
@@ -242,7 +242,7 @@ export default function RideEaseBody() {
             </div>
         </div>
     </section>
-    <section className='mt-20 flex flex-col space-y-10 ml-5 md:ml-20 lg:mx-0 w-screen overflow-scroll 
+    <section className='mt-20 flex flex-col space-y-10 pl-5 md:pl-20 lg:mx-0 w-full overflow-scroll 
     lg:overflow-hidden lg:w-[92%]'>
         <Heading text={'User Journey Map'} />
         <div className='flex flex-col space-y-3 mx-5 md:mx-0'>
@@ -271,7 +271,7 @@ export default function RideEaseBody() {
             <div className='grid grid-cols-6 gap-5'>
                 <h2 className='bg-[#EBF3FE] text-lg py-3 font-bold text-[#193767] rounded-md 
                 text-center font-three'>Feeling</h2>
-                {rideEaseData.userJourney.feeling.map((item => <figure className='
+                {rideEaseData.userJourney.feeling.map((item => <figure key={item} className='
                 rounded-md bg-[#F2F3F5] flex justify-center'>
                     <img src={item} className='self-center '/>
                 </figure>))}

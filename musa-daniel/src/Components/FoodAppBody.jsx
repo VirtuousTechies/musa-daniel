@@ -1,5 +1,5 @@
 import React from 'react'
-import { chat, componentOne, componentThree, componentTwo, favourite, figma, foodAbout, foodMainFive, foodMainFour, foodMainOne, foodMainThree, foodMainTwo, foodProblem, ordering, screenFive, screenFour, screenOne, screenSix, screenThree, screenTwo, special, summary, tracking, vendor,} from '../Data'
+import { chat, componentOne, componentThree, componentTwo, favourite, figma, flag, foodAbout, foodMainFive, foodMainFour, foodMainOne, foodMainThree, foodMainTwo, foodProblem, ordering, screenFive, screenFour, screenOne, screenSix, screenThree, screenTwo, special, summary, tracking, vendor,} from '../Data'
 import { FoodHeader } from '.'
 import { foodAppData } from '../Data/demo'
 
@@ -93,6 +93,33 @@ export default function FoodAppBody() {
                 </div>
                 <img src={foodProblem} alt="problem" className='md:max-w-[40%] lg:max-w-[50%] 
                 xl:max-w-full' />
+            </div>
+        </section>
+        <section className='flex flex-col space-y-20 md:items-start w-[90%] mx-5 md:mx-0 
+        md:w-[80%] bg-[#17171717]'>
+            <FoodHeader end={'Design process'} />
+            <div className='flex flex-col-reverse space-y-reverse space-y-5 md:space-y-0 md:flex-row 
+            md:justify-between w-full'>
+                <div className='flex flex-col space-y-5 self-start'>
+                    <h2 className='bg-gradient-to-l font-four text-3xl md:text-4xl font-extrabold 
+                    text-transparent bg-clip-text to-[#F9881F] from-[#ED474A]'>Divergence</h2>
+                    <p className='font-four font-bold text-white 
+                    text-base'>Researching the Idea</p>
+                    <p className='font-four font-extralight text-white text-base md:w-[20rem] 
+                    lg:w-[24.5rem]'>
+                    My divergence stage saw me researching food ordering apps and mechanism, with a keen 
+                    analysis on popular choices such as Ubereats, Jumiafood, Chowdeck etc. <br />
+                    One thing they all had in common was the unavailability of a direct interface 
+                    between the user and the vendor of the food being ordered. </p>
+                    <p className='font-four font-extralight text-white text-base md:w-[20rem] 
+                    lg:w-[24.5rem]'>
+                    Conventionally, this is widely accepted, however,
+                    <span className='text-white font-bold'> ChowXpress </span> is different in the 
+                    sense that it also serves as a medium for food vendors to take special orders 
+                    and  interact with customers.</p>
+                </div>
+                <img src={flag} alt="problem" className='md:max-w-[40%] lg:max-w-[50%] 
+                xl:max-w-[70%] pt-40 self-end' />
             </div>
         </section>
         <section className='flex flex-col space-y-20 md:items-start w-[90%] mx-5 md:mx-0 

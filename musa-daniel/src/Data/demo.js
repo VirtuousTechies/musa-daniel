@@ -1,4 +1,4 @@
-import { adBlockerCover, airMaxCover, define, design, foodAppCover, hfOne, hfTwo, ideate, laughing, otherEight, otherFive, otherFour, otherNine, otherOne, otherSeven, otherSix, otherThree, otherTwo, pi, relieved, rideEaseCover, rideMainOne, rideMainTwo, screenOne, smiling, test, thinking, understand, ura, ut } from "."
+import { adBlockerCover, airMaxCover, define, design, foodAppCover, foodUserOne, hfOne, hfTwo, ideate, laughing, otherEight, otherFive, otherFour, otherNine, otherOne, otherSeven, otherSix, otherThree, otherTwo, pi, relieved, rideEaseCover, rideMainOne, rideMainTwo, screenOne, smiling, test, thinking, understand, ura, ut } from "."
 
 export const navItems = ['About me', 'Works', 'Contact me']
 export const aboutParagraphs = ['Daniel is a seasoned product designer known for his innovative approach and passion for creating meaningful user experiences. With a deep understanding of user-centric design principles and a constant desire for growth, Daniel has played a pivotal role in shaping products that resonate with users and drive business success.', 'He has a very detailed understanding of how to conduct user research, he is an amazing storyteller with expertise in the use of typography, layout, and color in visual communication and I’m proficient in using major design tools like Figma, and Miro.', 'Daniel has experience building products for Fintech, Edutech, and the E-Commerce industry. I am keen on using design to solve and improve human problems, thereby focusing on creating human-centered designs that look modern, deliver effective conversion, and meet business goals and requirements.', 'When he is not designing, he read different resources on design, watch YouTube videos on different UX patterns and trends, and teach people how to become UI or UX designers which is a way for me to give back to my community by sharing my knowledge. When he want to relax, he watch movies and as a big football fan, he can be found watching football matches.His skills are but are not limited to conducting user research, storytelling, use of typography, layout, and color in visual communication, Design Thinking, Wireframing, and Prototyping. I’m also proficient in using most design tools like Figma.', 'Have an interesting project? He can help you.']
@@ -314,7 +314,112 @@ export const foodAppData = {
             text: 'Design an app for users to order food and monitor delivery in real time, allow vendors to take special orders and also interact with the users.'
         }
     ],
-    summary: ["This project saw me put to test alot of the skills I’ve learnt for product design and development, from market surveys to building wireframes (Low-fi & Hi-fi),  prototyping the concept and iterating on the designs. This was very time-consuming and demanding and really pushed me to alot of my current limits. ", "I learnt alot during this project, such as needing to work on perfecting my UX design process, trying out new UI design skills, definitely working on being a better user interviewer etc, but, I will continue to improve on my skills, still lots to learn, and I know my next project, which i’m starting immediately, would see me test new waters and break new grounds."]
+    summary: ["This project saw me put to test alot of the skills I’ve learnt for product design and development, from market surveys to building wireframes (Low-fi & Hi-fi),  prototyping the concept and iterating on the designs. This was very time-consuming and demanding and really pushed me to alot of my current limits. ", "I learnt alot during this project, such as needing to work on perfecting my UX design process, trying out new UI design skills, definitely working on being a better user interviewer etc, but, I will continue to improve on my skills, still lots to learn, and I know my next project, which i’m starting immediately, would see me test new waters and break new grounds."],
+    convergence: [
+        {
+            id: 1,
+            img: foodUserOne,
+            name: 'Mister Macaroni',
+            age: '20-30',
+            occupation: 'Lawyer',
+            des: "“My busy schedule really just see’s me ordering takeout food only from already existing apps, hardly do I get to eat homemade food...and yes, I dont mind the wait”",
+            bio: 'Mr. Macaroni is a Lawyer in a bustling city with a demanding job that sees him working most of the time, he rarely has time to actually cook his own food and only orders takeouts online, according to him, the last time he ate homemade food was more than 4 months ago.',
+            goals: ['User wants quality homemade food', 'Be able to order custom made food.', 'Be able to interact with vendor.'],
+            frustration: ['Limited variety of food on most apps', 'Little to no African options when ordering', 'Complaints lodged in case of dissatisfaction falls on deaf ears']
+        },
+        {
+            id: 2,
+            img: foodUserOne,
+            name: 'Johny Makelele',
+            age: '20-30',
+            occupation: 'Frontend Dev',
+            des: '“It’s almost become a fond memory now, the taste of homemade food, now it’s just takeouts (which are delicious), but lack that IT factor that comes with the human aspect of foodmaking and knowing who actually made ur food.”',
+            bio: 'Johnny is a frontend developer with a busy schedule, when he’s not attending dev meetings in the day, he’s writing code into the night, and mostly just orders takeout due to his busy schedule, he hardly makes his own food.',
+            goals: ['Be able to order quality homemade African food', 'Be able to interact with vendor to give compliments where the food is phenomenal.'],
+            frustration:['Limited variety of food on most apps','Little to no African options when ordering','Lack of human aspect to food ordering, except for the delivery men.']
+        }
+    ],
+    journeyMap: [
+        {
+            id: 1,
+            name: 'Johny Makelele',
+            goal: 'Placing an order for food',
+            action: ['Download App', 'Register', 'Browse menu', 'Order food'],
+            task: [
+                {
+                    id: 1,
+                    text: ['Go to the App store to download ChowXpress.']
+                },
+                {
+                    id: 2,
+                    text: ['User may either signup or sign in into the app.', 'User may sign up as a food lover or vendor']
+                },
+                {
+                    id: 3,
+                    text: ['User may scroll through the app and select which food they would like to place an order for.']
+                },
+                {
+                    id: 4,
+                    text: ['Place order for food', 'Make payment', 'Set food as favourite', 'Track delivery of order']
+                },
+
+            ],
+            opportunities: [
+                {
+                    id: 1,
+                    text: ['Nil']
+                },
+                {
+                    id: 2,
+                    text: ['Show case some of the offerings on the app.', 'Complete KYC process in a smooth manner']
+                },
+                {
+                    id: 3,
+                    text: ['A top card for event marketing specials.']
+                },
+                {
+                    id: 4,
+                    text: ['Seamless ordering mechanism and tracking.', 'Payment system should be a “set once use forever” type.']
+                },
+
+            ]
+        },
+        {
+            id: 2,
+            name: '',
+            goal: '',
+            action: ['Download App', 'Register', 'Browse menu', 'Special orders'],
+            task: [
+                {
+                    id: 1,
+                    text: ['Go to the App store to download ChowXpress']
+                },
+                {
+                    id: 2,
+                    text: ['User may either signup or sign in into the app.', 'User may sign up as a vendor', 'User must complete KYC']
+                },
+                {
+                    id: 3,
+                    text: ['Vendor monitors amount of orders taken.', 'Vendor sees notifications']
+                },
+                {
+                    id: 4,
+                    text: ['Vendor can turn on/off availability for special orders', 'Vendor can send proposals for special orders.']
+                },
+
+            ],
+            opportunities: [
+                {
+                    id: 1,
+                    text: ['Nil']
+                },
+                {
+                    id: 2,
+                    text: ['Show case some of the offerings on the app.', 'Complete KYC process in a smooth manner']
+                },
+            ]
+        },
+    ]
 }
 
 export const rideEaseScreens =[otherOne, otherNine, otherTwo, otherSix, otherFour, otherEight, otherThree, otherSeven, otherFive]

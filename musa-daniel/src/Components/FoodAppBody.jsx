@@ -167,9 +167,9 @@ export default function FoodAppBody() {
             </div>
         </section>
 
-        <Convergence />
+        <Convergence data={foodAppData.convergence[0]}/>
 
-        <Convergence />
+        <Convergence data={foodAppData.convergence[1]}/>
 
         <JourneyMap />
 

@@ -386,8 +386,8 @@ export const foodAppData = {
         },
         {
             id: 2,
-            name: '',
-            goal: '',
+            name: 'Peace Uche',
+            goal: 'Becoming a vendor on ChowXpress',
             action: ['Download App', 'Register', 'Browse menu', 'Special orders'],
             task: [
                 {

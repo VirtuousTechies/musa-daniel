@@ -171,9 +171,9 @@ export default function FoodAppBody() {
 
         <Convergence data={foodAppData.convergence[1]}/>
 
-        <JourneyMap />
+        <JourneyMap data={foodAppData.journeyMap[0]}/>
 
-        <JourneyMap />
+        <JourneyMap data={foodAppData.journeyMap[1]}/>
 
         <section className='flex flex-col space-y-20 md:items-start w-[90%] mx-5 md:mx-0 
         md:w-[80%] bg-[#17171717]'>

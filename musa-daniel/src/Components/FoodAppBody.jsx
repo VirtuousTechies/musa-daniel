@@ -58,6 +58,7 @@ export default function FoodAppBody() {
             </figure>
             </section>
        </section>
+
         <section className='flex md:justify-center md:items-center w-full bg-[#121212] py-20'>
             <section className='flex flex-col space-y-20 pl-5 md:pl-0 md:items-start w-[90%] md:w-[80%]'>
                 <FoodHeader />
@@ -73,16 +74,17 @@ export default function FoodAppBody() {
                 </section>
             </section>
         </section>
+
         <section className='flex flex-col space-y-20 md:items-start w-[90%] mx-5 md:mx-0 
         md:w-[80%] bg-[#17171717]'>
             <FoodHeader />
             <div className='flex flex-col-reverse space-y-reverse space-y-5 md:space-y-0 md:flex-row 
             md:justify-between w-full'>
-                <div className='flex flex-col space-y-5'>
+                <div className='flex flex-col'>
                     <h2 className='bg-gradient-to-l font-four text-3xl md:text-4xl font-extrabold 
-                    text-transparent bg-clip-text to-[#F9881F] from-[#ED474A]'>Problem statement</h2>
+                    text-transparent bg-clip-text to-[#F9881F] from-[#ED474A] mb-5'>Problem statement</h2>
                     <p className='font-four font-bold text-white 
-                    text-base'>Understanding the problem:</p>
+                    text-base mb-2'>Understanding the problem:</p>
                     <p className='font-four font-extralight text-white text-base md:w-[20rem] 
                     lg:w-[24.5rem]'>
                     There are plenty of food ordering apps on the market, but what makes 
@@ -95,16 +97,17 @@ export default function FoodAppBody() {
                 xl:max-w-full' />
             </div>
         </section>
+
         <section className='flex flex-col space-y-20 md:items-start w-[90%] mx-5 md:mx-0 
         md:w-[80%] bg-[#17171717]'>
             <FoodHeader end={'Design process'} />
             <div className='flex flex-col-reverse space-y-reverse space-y-5 md:space-y-0 md:flex-row 
             md:justify-between w-full'>
-                <div className='flex flex-col space-y-5 self-start'>
+                <div className='flex flex-col self-start'>
                     <h2 className='bg-gradient-to-l font-four text-3xl md:text-4xl font-extrabold 
-                    text-transparent bg-clip-text to-[#F9881F] from-[#ED474A]'>Divergence</h2>
+                    text-transparent bg-clip-text to-[#F9881F] from-[#ED474A] mb-5'>Divergence</h2>
                     <p className='font-four font-bold text-white 
-                    text-base'>Researching the Idea</p>
+                    text-base mb-2'>Researching the Idea</p>
                     <p className='font-four font-extralight text-white text-base md:w-[20rem] 
                     lg:w-[24.5rem]'>
                     My divergence stage saw me researching food ordering apps and mechanism, with a keen 
@@ -112,16 +115,58 @@ export default function FoodAppBody() {
                     One thing they all had in common was the unavailability of a direct interface 
                     between the user and the vendor of the food being ordered. </p>
                     <p className='font-four font-extralight text-white text-base md:w-[20rem] 
-                    lg:w-[24.5rem]'>
+                    lg:w-[24.5rem] mt-5'>
                     Conventionally, this is widely accepted, however,
                     <span className='text-white font-bold'> ChowXpress </span> is different in the 
                     sense that it also serves as a medium for food vendors to take special orders 
                     and  interact with customers.</p>
                 </div>
                 <img src={flag} alt="problem" className='md:max-w-[40%] lg:max-w-[50%] 
-                xl:max-w-[70%] pt-40 self-end' />
+                pt-40 self-end' />
             </div>
         </section>
+
+        <section className='flex flex-col space-y-20 md:items-start w-[90%] mx-5 md:mx-0 
+        md:w-[80%] bg-[#17171717]'>
+            <FoodHeader end={'Design process'} />
+            <div className='flex flex-col-reverse space-y-reverse space-y-5 md:space-y-0 md:flex-row 
+            md:justify-between w-full'>
+                <div className='flex flex-col self-start'>
+                    <h2 className='bg-gradient-to-l font-four text-3xl md:text-4xl font-extrabold 
+                    text-transparent bg-clip-text to-[#F9881F] from-[#ED474A] mb-5'>Divergence</h2>
+                    <p className='font-four font-bold text-[#ED474A]
+                    text-base mb-5'>Researching the Users</p>
+                    <p className='font-four font-bold text-white 
+                    text-base mb-2'>Market viability</p>
+                    <p className='font-four font-extralight text-white text-base md:w-[20rem] 
+                    lg:w-[24.5rem]'>
+                    To test the market viability of this idea, I employed the use of a Quantitative 
+                    research mechanism to see the likelihood of people to make use of 
+                    <span className='text-white font-bold'> ChowXpress.</span><br />
+                    In a short sample, taken before the commencement of this project, 
+                    <span className='text-[#ED474A] font-bold'> 6 in 10 </span> persons order food that are 
+                    advertised to them via social media platforms like Whatsapp or instagram, 
+                    this points to a viable market for the solution 
+                    <span className='text-white font-bold'> ChowXpress</span> offers. </p>
+                    <p className='font-four font-extralight text-white text-base md:w-[20rem] 
+                    lg:w-[24.5rem] mt-5'>Instead of users being limited to only what they can 
+                    see in their closed circle, a wider world is opened to them to try many things 
+                    from different vendors.</p>
+                </div>
+                <div className='flex flex-col self-center'>
+                    <h2 className='bg-gradient-to-l font-four text-3xl md:text-4xl font-extrabold 
+                    text-transparent bg-clip-text to-[#F9881F] from-[#ED474A] mb-2'>6 in 10 people</h2>
+                    <p className='font-four font-bold text-white w-[12rem]
+                    text-lg mb-5'>order food based on what they’ve seen on social media apps.</p>
+                    <p className='font-four font-extralight text-white text-base md:w-[20rem] 
+                    lg:w-[24.5rem] mt-5'>
+                    After establishing the viability of this idea with users, I set out to sketch out 
+                    concepts for what <span className='text-white font-bold'> ChowXpress </span>
+                    would look like and what should be contained.</p>
+                </div>
+            </div>
+        </section>
+
         <section className='flex flex-col space-y-20 md:items-start w-[90%] mx-5 md:mx-0 
         md:w-[80%] bg-[#17171717]'>
             <FoodHeader end={'App screens'}/>
@@ -142,6 +187,7 @@ export default function FoodAppBody() {
                 <img src={ordering} alt="problem" className='md:max-w-[50%]' />
             </div>
         </section>
+
         <section className='flex flex-col space-y-20 md:items-start w-[90%] mx-5 md:mx-0 
         md:w-[80%] bg-[#17171717]'>
             <FoodHeader end={'App screens'}/>
@@ -160,6 +206,7 @@ export default function FoodAppBody() {
                 <img src={tracking} alt="problem" className='md:max-w-[50%]' />
             </div>
         </section>
+
         <section className='flex flex-col space-y-20 md:items-start w-[90%] mx-5 md:mx-0 
         md:w-[80%] bg-[#17171717]'>
             <FoodHeader end={'App screens'}/>
@@ -181,6 +228,7 @@ export default function FoodAppBody() {
                 <img src={favourite} alt="problem" className='md:max-w-[50%]' />
             </div>
         </section>
+
         <section className='flex flex-col space-y-20 md:items-start w-[90%] mx-5 md:mx-0 
         md:w-[80%] bg-[#17171717]'>
             <FoodHeader end={'App screens'}/>
@@ -207,6 +255,7 @@ export default function FoodAppBody() {
                 <img src={special} alt="problem" className='md:max-w-[50%]' />
             </div>
         </section>
+
         <section className='flex flex-col space-y-20 md:items-start w-[90%] mx-5 md:mx-0 
         md:w-[80%] bg-[#17171717]'>
             <FoodHeader end={'App screens'}/>
@@ -225,6 +274,7 @@ export default function FoodAppBody() {
                 <img src={chat} alt="problem" className='md:max-w-[50%]' />
             </div>
         </section>
+
         <section className='flex flex-col space-y-20 md:items-start w-[90%] mx-5 md:mx-0 
         md:w-[80%] bg-[#17171717]'>
             <FoodHeader end={'App screens'}/>
@@ -253,6 +303,7 @@ export default function FoodAppBody() {
                 <img src={vendor} alt="problem" className='md:max-w-[50%]' />
             </div>
         </section>
+
         <section className='flex flex-col space-y-20 md:items-start w-[90%] mx-5 md:mx-0 
         md:w-[80%] bg-[#17171717]'>
             <FoodHeader end={'App screens'} />
@@ -267,7 +318,9 @@ export default function FoodAppBody() {
                 <img src={screenSix} alt="screen-six" />
             </figure>
         </section>
+
         <div className='bg-[#98A2B3] w-[90%] md:w-[80%] h-[2px]'></div>
+
         <section className='flex flex-col space-y-20 md:items-start w-[90%] mx-5 md:mx-0 
         md:w-[80%] bg-[#17171717]'>
             <h2 className='bg-gradient-to-l font-four text-3xl md:text-4xl font-extrabold 
@@ -278,6 +331,7 @@ export default function FoodAppBody() {
                 <img src={componentThree} alt="component-three" />
             </figure>
         </section>
+
         <section className='flex flex-col space-y-20 md:items-start w-[90%] mx-5 md:mx-0 
         md:w-[80%] bg-[#17171717]'>
             <FoodHeader />
@@ -292,6 +346,7 @@ export default function FoodAppBody() {
                 <img src={summary} alt="summary" className='self-end' />
             </div>
         </section>
+
         <section className='flex flex-col w-full bg-[#03071E] px-5 py-10'>
             <FoodHeader />
            <div className='self-center flex flex-col w-full justify-center items-center 
@@ -304,6 +359,7 @@ export default function FoodAppBody() {
                 I’d love to hear your feedback.</p>
            </div>
         </section>
+
     </section>
   )
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import { chat, componentOne, componentThree, componentTwo, favourite, figma, flag, foodAbout, foodMainFive, foodMainFour, foodMainOne, foodMainThree, foodMainTwo, foodProblem, ordering, screenFive, screenFour, screenOne, screenSix, screenThree, screenTwo, special, summary, tracking, vendor,} from '../Data'
-import { FoodHeader } from '.'
+import { Convergence, FoodHeader, JourneyMap } from '.'
 import { foodAppData } from '../Data/demo'
 
 export default function FoodAppBody() {
@@ -166,6 +166,14 @@ export default function FoodAppBody() {
                 </div>
             </div>
         </section>
+
+        <Convergence />
+
+        <Convergence />
+
+        <JourneyMap />
+
+        <JourneyMap />
 
         <section className='flex flex-col space-y-20 md:items-start w-[90%] mx-5 md:mx-0 
         md:w-[80%] bg-[#17171717]'>
